@@ -1,0 +1,203 @@
+from numpy.lib.histograms import histogram
+from sklearn.datasets import load_iris
+import matplotlib.pyplot as plt
+import pandas as pd
+import matplotlib._color_data as mcd
+import os
+import numpy as np
+import seaborn as sns
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import f_classif
+
+def iris_dataset(histogram=False, boxplot=False, pie=True):
+    iris_path = os.path.join(os.getcwd(), 'iris_dataset', 'iris.data')
+    iris_features = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
+    df = pd.read_csv(iris_path, sep=',', names=["sepal_length", "sepal_width", "petal_length", "petal_width", "class"])
+
+    iris_data = df[iris_features]
+
+    iris_classes = np.array(df['class'])
+    class_name = sorted(list(set(iris_classes)), reverse=False)
+
+    colors = ['#EA4335', '#FBBC04', '#4285F4']
+
+    plt.rcParams['axes.facecolor'] = '#f5f5f5'
+
+    sns.set()
+
+    if histogram:
+        iris_data = np.array(iris_data)
+        for feature in range(iris_data.shape[1]):
+            plt.subplot(2, 2, feature + 1)
+            for label, color in zip(range(len(class_name)), colors):
+                plt.hist(iris_data[iris_classes == class_name[label], feature],
+                         label=class_name[label].replace("-", " ").title(),
+                         color=color,
+                         histtype='bar',
+                         ec='white',
+                         alpha=0.7)
+
+            plt.ylabel("Frequency")
+            plt.xlabel(iris_features[feature].replace("_", " ").title())
+            plt.legend()
+
+        plt.show()
+
+    if boxplot:
+        plt.figure(figsize=(12,10))
+        for i in range(len(iris_features)):
+            plt.subplot(2,2, i + 1)
+            boxes = sns.boxplot(x='class',y=iris_features[i],data=df)
+            for i in range((boxes.numCols * boxes.numRows) -1):
+                mybox = boxes.artists[i]
+                mybox.set_facecolor(colors[i])
+
+        plt.show()
+
+    if pie:
+        df_class = df['class'].value_counts()
+        # df_class.value_counts().plot.pie(autopct='%1.1f%%',colors=colors, startangle=0,)
+        # plt.show()
+        class_name = [x.replace('_', ' ').capitalize() for x in class_name]
+        plt.gca().axis("equal")
+        pie = plt.pie(df_class, startangle=0, autopct='%1.0f%%', colors=colors)
+        # plt.title('Pie Chart Demonstration for Iris dataset', weight='bold', size=14)
+        plt.legend(pie[0],class_name, bbox_to_anchor=(1,0.5), loc="center right", fontsize=10, 
+                bbox_transform=plt.gcf().transFigure)
+        plt.subplots_adjust(left=0.0, bottom=0.1, right=0.85)
+
+        plt.show()
+        plt.clf()
+        plt.close()
+
+def segment_dataset(histogram=False):
+    segment_path = os.path.join(os.getcwd(), 'segment_dataset', 'segment.dat')
+    segment_features = ["region-centroid-col", "region-centroid-row", "region-pixel-count", "short-line-density-5",
+                        "short-line-density-2", "vedge-mean", "vegde-sd", "hedge-mean", "hedge-sd", "intensity-mean",
+                        "rawred-mean", "rawblue-mean", "rawgreen-mean", "exred-mean", "exblue-mean", "exgreen-mean",
+                        "value-mean", "saturatoin-mean", "hue-mean"]
+    df = pd.read_csv(segment_path, sep=' ',
+                     names=["region-centroid-col", "region-centroid-row", "region-pixel-count", "short-line-density-5",
+                            "short-line-density-2", "vedge-mean", "vegde-sd", "hedge-mean", "hedge-sd",
+                            "intensity-mean",
+                            "rawred-mean", "rawblue-mean", "rawgreen-mean", "exred-mean", "exblue-mean", "exgreen-mean",
+                            "value-mean", "saturatoin-mean", "hue-mean", "class"])
+    class_name_label = ["Brickface", "Sky", "Foliage", "Cement", "Window", "Path", "Grass"]
+
+    segment_classes = np.array(df['class'])
+    class_name = sorted(list(set(segment_classes)), reverse=False)
+
+    # Calculate colleration
+    corr = df.corr(method='pearson')  # pearson kendall spearman
+
+    mask = np.zeros_like(corr, dtype=np.bool)
+    mask[np.triu_indices_from(mask)] = True
+
+    # Generate a custom diverging colormap
+    cmap = sns.diverging_palette(1, 200, as_cmap=True)
+
+    # Draw the heatmap with the mask and correct aspect ratio
+    # sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
+    #            square=True, linewidths=.5, cbar_kws={"shrink": .5}, annot=False)
+    # correlation = corr.values[-1][~np.isnan(corr.values[-1])]
+
+    # Remove value 1 and nan
+    correlation_value = corr.values[-1][~np.isnan(corr.values[-1])]
+    correlation_value = [correlation_value[i] for i in range(0, len(correlation_value)) if
+                         correlation_value[i] != 1]
+    correlation_index = corr.index[~np.isnan(corr.values[-1])]
+    correlation_index = [correlation_index[i] for i in range(0, len(correlation_value)) if
+                         correlation_value[i] != 1]
+
+    # Sort array correlation with value desc and choose 2 values largest and 2 values smallest
+    number_of_feature = 4
+    correlation_value_sorted = np.argsort(correlation_value)
+    feature_selected = []
+    for i in range(0, number_of_feature):
+        if (i < (int)(number_of_feature / 2)):
+            feature_selected.append(correlation_index[correlation_value_sorted[i]])
+        else:
+            feature_selected.append(correlation_index[correlation_value_sorted[
+                len(correlation_value_sorted) - (i + 1 - (int)(number_of_feature / 2))]])
+
+    # Draw histogram
+    colors = ['#EA4335', '#FBBC04', '#4285F4', '#34A853', '#97710C', '#FD8EBB', '#A610D8']
+
+    sns.set()
+
+    if histogram:
+
+        segment_data = np.array(df[segment_features])
+
+        # Create array with 4 column of feature selected
+        segment_data_select = np.empty([segment_data.shape[0], 0], dtype=float)
+        for i in range(0, len(feature_selected)):
+            feature_selected_column = np.array(df[feature_selected[i]].transpose())
+            segment_data_select = np.column_stack((segment_data_select, feature_selected_column))
+
+        for feature in range(segment_data_select.shape[1]):
+            plt.subplot(2, 2, feature + 1)
+            for label, color in zip(range(len(class_name)), colors):
+                plt.hist(segment_data_select[segment_classes == class_name[label], feature],
+                         label=class_name_label[label],
+                         color=color,
+                         histtype='bar',
+                         ec='white', alpha=0.7)
+
+            plt.ylabel("Frequency")
+            plt.xlabel(feature_selected[feature].replace("-", " ").title())
+            plt.legend()
+
+        plt.show()
+
+def satimage_dataset(histogram=False, boxplot=True, pie=True):
+    sat_path = os.path.join(os.getcwd(), 'satellite_dataset', 'sat.trn')
+    sat_features = [str(x) for x in range(1, 37)]
+    central_features = ['17','18','19','20']
+    df = pd.read_csv(sat_path, sep=' ', names=sat_features + ['class'])
+
+    sat_data = df[sat_features]
+
+    sat_classes = df['class']
+    sat_classes = np.array(sat_classes)
+    class_name = sorted(list(set(sat_classes)), reverse=False)
+
+    central_pixel = df[central_features + ['class']]
+
+    colors = ['#EA4335', '#FBBC04', '#4285F4', '#EA4335', '#FBBC04', '#4285F4']
+
+    plt.rcParams['axes.facecolor'] = '#f5f5f5'
+    sns.set()
+    if boxplot:
+        plt.figure(figsize=(12,10))
+        for i in range(len(central_features)):
+            plt.subplot(2,2, i + 1)
+            boxes = sns.boxplot(x='class', y=central_features[i], data=central_pixel)
+            for i in range((boxes.numCols * boxes.numRows) -1):
+                mybox = boxes.artists[i]
+                mybox.set_facecolor(colors[i])
+
+        plt.show()
+
+    if pie:
+        df_class = df['class'].map({1:'Red soil', 2:'Cotton crop', 3:'Grey soil', 4:'Damp grey soil', 5:'Soil with vegetation stubble', 7:'Very damp grey soil'})
+        # df_class.value_counts().plot.pie(autopct='%1.1f%%',colors=colors)
+        # plt.show()
+        class_name = ['Red soil', 'Cotton crop', 'Grey soil', 'Damp grey soil', 'Soil with vegetation stubble', 'Very damp grey soil']
+        df_class = df_class.value_counts()
+        plt.gca().axis("equal")
+        pie = plt.pie(df_class, startangle=0, autopct='%1.0f%%', colors=colors)
+        # plt.title('Pie Chart Demonstration for Iris dataset', weight='bold', size=14)
+        plt.legend(pie[0], class_name, bbox_to_anchor=(1,0.5), loc="center right", fontsize=10, 
+                bbox_transform=plt.gcf().transFigure)
+        plt.subplots_adjust(left=0.0, bottom=0.1, right=0.75)
+
+        plt.show()
+        plt.clf()
+        plt.close()
+
+
+if __name__ == "__main__":
+    segment_dataset(histogram=True)
+    # satimage_dataset(boxplot=False)
+
