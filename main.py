@@ -26,7 +26,8 @@ def iris_dataset(histogram=False, boxplot=True, pie=False):
     iris_classes = np.array(df['class'])
     class_name = sorted(list(set(iris_classes)), reverse=False)
 
-    colors = ['#EA4335', '#FBBC04', '#4285F4']
+    # colors = ['#EA4335', '#FBBC04', '#4285F4']
+    colors = ['#EA4335', '#FBBC04', '#4285F4', '#34A853', '#97710C', '#FD8EBB', '#A610D8']
 
     plt.rcParams['axes.facecolor'] = '#f5f5f5'
 
@@ -46,11 +47,18 @@ def iris_dataset(histogram=False, boxplot=True, pie=False):
 
             plt.ylabel("Frequency")
             plt.xlabel(iris_features[feature].replace("_", " ").title())
-            plt.legend()
 
+        plt.legend(bbox_to_anchor=(1.25, 1.2), loc='center right')
         plt.show()
 
     if boxplot:
+
+        features_titlize = [x.replace("_", " ").title() for x in iris_features]
+        box = plt.boxplot(df[iris_features], patch_artist=True, labels=features_titlize)
+        for patch, color in zip(box['boxes'], colors):
+            patch.set_facecolor(color)
+        plt.show()
+
         plt.figure(figsize=(12,10))
         class_name = [x.replace("-", " ").title() for x in class_name]
         for i in range(len(iris_features)):
@@ -60,7 +68,7 @@ def iris_dataset(histogram=False, boxplot=True, pie=False):
                 mybox = boxes.artists[j]
                 mybox.set_facecolor(colors[j])
             boxes.set_xticklabels(class_name)
-            plt.ylabel(iris_features[i].replace("_", " ").title())
+            plt.ylabel(features_titlize[i])
         plt.show()
 
     if pie:
@@ -155,8 +163,8 @@ def segment_dataset(histogram=False, boxplot=False, pie=False):
 
             plt.ylabel("Frequency")
             plt.xlabel(feature_selected[feature].replace("-", " ").title())
-            plt.legend()
 
+        plt.legend(bbox_to_anchor=(1.25, 1.2), loc='center right')
         plt.show()
 
     if pie:
@@ -177,12 +185,13 @@ def segment_dataset(histogram=False, boxplot=False, pie=False):
         plt.clf()
         plt.close()
 
-def satimage_dataset(histogram=False, boxplot=False, pie=False):
-    sat_path = os.path.join(os.getcwd(), 'dataset', 'satimage', 'sat.trn')
+def satimage_dataset(training_set=False,histogram=False, boxplot=False, pie=False):
+    file_name = 'sat.trn' if training_set else 'sat.tst'
+    sat_path = os.path.join(os.getcwd(), 'dataset', 'satimage', file_name)
     sat_features = [str(x) for x in range(1, 37)]
     central_features = ['17','18','19','20']
     df = pd.read_csv(sat_path, sep=' ', names=sat_features + ['class'])
-
+    df['class'] = df['class'].map({1:'Red soil', 2:'Cotton crop', 3:'Grey soil', 4:'Damp grey \nsoil', 5:'Soil with \nvegetation stubble', 7:'Very damp \ngrey soil'})
     sat_data = df[sat_features]
 
     sat_classes = df['class']
@@ -210,12 +219,18 @@ def satimage_dataset(histogram=False, boxplot=False, pie=False):
 
             plt.ylabel("Frequency")
             plt.xlabel(central_features[feature])
-            plt.legend()
 
+        plt.legend(bbox_to_anchor=(1.25, 1.2), loc='center right')
         plt.show()
 
 
     if boxplot:
+        
+        box = plt.boxplot(df[central_features], patch_artist=True, labels=central_features)
+        for patch, color in zip(box['boxes'], colors):
+            patch.set_facecolor(color)
+        plt.show()
+
         class_name = ['Red Soil', 'Cotton Crop', 'Grey Soil', 'Damp Grey \nSoil', 'Soil with \nVegetation Stubble', 'Very Damp \nGrey Soil']
         # xlabels_new = [re.sub("(.{10})", "\\1\n", label, 0, re.DOTALL) for label in class_name]
         central_pixel = df[central_features + ['class']]
@@ -223,9 +238,9 @@ def satimage_dataset(histogram=False, boxplot=False, pie=False):
         for i in range(len(central_features)):
             plt.subplot(2,2, i + 1)
             boxes = sns.boxplot(x='class', y=central_features[i], data=central_pixel)
-            for i in range(len(boxes.artists)):
-                mybox = boxes.artists[i]
-                mybox.set_facecolor(colors[i])
+            for j in range(len(boxes.artists)):
+                mybox = boxes.artists[j]
+                mybox.set_facecolor(colors[j])
             boxes.set_xticklabels(class_name)
             # plt.legend(class_name, bbox_to_anchor=(1,0.5), loc="center right", fontsize=10, 
             #         bbox_transform=plt.gcf().transFigure)
@@ -234,7 +249,8 @@ def satimage_dataset(histogram=False, boxplot=False, pie=False):
         plt.show()
 
     if pie:
-        df_class = df['class'].map({1:'Red soil', 2:'Cotton crop', 3:'Grey soil', 4:'Damp grey soil', 5:'Soil with vegetation stubble', 7:'Very damp grey soil'})
+        # df_class = df['class'].map({1:'Red soil', 2:'Cotton crop', 3:'Grey soil', 4:'Damp grey soil', 5:'Soil with vegetation stubble', 7:'Very damp grey soil'})
+        df_class = df['class']
         # df_class.value_counts().plot.pie(autopct='%1.1f%%',colors=colors)
         # plt.show()
         class_name = ['Red Soil', 'Cotton Crop', 'Grey Soil', 'Damp Grey Soil', 'Soil with Vegetation Stubble', 'Very Damp Grey Soil']
@@ -252,7 +268,7 @@ def satimage_dataset(histogram=False, boxplot=False, pie=False):
 
 
 if __name__ == "__main__":
-    iris_dataset(histogram=True, boxplot=True, pie=True)
+    # iris_dataset(histogram=True, boxplot=True, pie=True)
     # segment_dataset(histogram=True, boxplot=True, pie=True)
     satimage_dataset(histogram=True, boxplot=True, pie=True)
 
