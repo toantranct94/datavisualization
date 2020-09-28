@@ -9,14 +9,16 @@ import seaborn as sns
 from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import f_classif
 import re
+from sklearn import preprocessing 
 
+label_encoder = preprocessing.LabelEncoder() 
 
 def hex_to_rgb(h):
     h = h.lstrip('#')
     rgb = [int(h[i:i+2], 16) for i in (0, 2, 4)]
     return tuple(rgb)
 
-def iris_dataset(histogram=False, boxplot=True, pie=False):
+def iris_dataset(histogram=False, boxplot=True, pie=False, scatter2d=False, matrix=False, parallel=False):
     iris_path = os.path.join(os.getcwd(), 'dataset', 'iris', 'iris.data')
     iris_features = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
     df = pd.read_csv(iris_path, sep=',', names=["sepal_length", "sepal_width", "petal_length", "petal_width", "class"])
@@ -48,7 +50,8 @@ def iris_dataset(histogram=False, boxplot=True, pie=False):
             plt.ylabel("Frequency")
             plt.xlabel(iris_features[feature].replace("_", " ").title())
 
-        plt.legend(bbox_to_anchor=(1.25, 1.2), loc='center right')
+        plt.legend(bbox_to_anchor=(-0.2, -0.27), loc='lower center', ncol=len(class_name))
+        # plt.subplots_adjust(bottom=0.25)
         plt.show()
 
     if boxplot:
@@ -87,7 +90,28 @@ def iris_dataset(histogram=False, boxplot=True, pie=False):
         plt.clf()
         plt.close()
 
-def segment_dataset(histogram=False, boxplot=False, pie=False):
+    if scatter2d:
+        labels = label_encoder.fit_transform(iris_classes)
+        formatter = plt.FuncFormatter(lambda i, *args: labels[i])
+        # plt.figure(figsize=(5, 4))
+        plt.scatter(iris_data[iris_features[0]], iris_data[iris_features[1]], c=labels)
+        plt.colorbar(ticks=[0, 1, 2], format=formatter)
+        plt.xlabel(iris_features[0])
+        plt.ylabel(iris_features[1])
+
+        plt.tight_layout()
+        plt.show()
+
+
+        pass
+    
+    if matrix:
+        pass
+
+    if parallel:
+        pass
+
+def segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=False):
     segment_path = os.path.join(os.getcwd(), 'dataset', 'segment', 'segment.dat')
     segment_features = ["region-centroid-col", "region-centroid-row", "region-pixel-count", "short-line-density-5",
                         "short-line-density-2", "vedge-mean", "vegde-sd", "hedge-mean", "hedge-sd", "intensity-mean",
@@ -143,9 +167,7 @@ def segment_dataset(histogram=False, boxplot=False, pie=False):
     sns.set()
 
     if histogram:
-
         segment_data = np.array(df[segment_features])
-
         # Create array with 4 column of feature selected
         segment_data_select = np.empty([segment_data.shape[0], 0], dtype=float)
         for i in range(0, len(feature_selected)):
@@ -164,34 +186,55 @@ def segment_dataset(histogram=False, boxplot=False, pie=False):
             plt.ylabel("Frequency")
             plt.xlabel(feature_selected[feature].replace("-", " ").title())
 
-        plt.legend(bbox_to_anchor=(1.25, 1.2), loc='center right')
+        plt.legend(bbox_to_anchor=(-0.2, -0.27), loc='lower center', ncol=len(class_name))
+        plt.show()
+
+    if boxplot:
+        central_pixel = df[feature_selected + ['class']]
+        plt.figure(figsize=(12,10))
+        for i in range(len(feature_selected)):
+            plt.subplot(2,2, i + 1)
+            boxes = sns.boxplot(x='class', y=feature_selected[i], data=central_pixel)
+            for j in range(len(boxes.artists)):
+                mybox = boxes.artists[j]
+                mybox.set_facecolor(colors[j])
+            boxes.set_xticklabels(class_name_label)
+            plt.ylabel(feature_selected[i].replace("-", " ").title())
+            #plt.legend(class_name_label, bbox_to_anchor=(1,0.5), loc="center right", fontsize=10,
+            #         bbox_transform=plt.gcf().transFigure)
+            #plt.subplots_adjust(left=0.0, bottom=0.1, right=0.75)
         plt.show()
 
     if pie:
-        df_class = df['class'].map({1:'Red soil', 2:'Cotton crop', 3:'Grey soil', 4:'Damp grey soil', 5:'Soil with vegetation stubble', 7:'Very damp grey soil'})
-        # df_class.value_counts().plot.pie(autopct='%1.1f%%',colors=colors)
-        # plt.show()
-        class_name = ['Red soil', 'Cotton crop', 'Grey soil', 'Damp grey soil', 'Soil with vegetation stubble', 'Very damp grey soil']
-        class_name = [x.capitalize() for x in class_name]
+        df_class = df['class'].map({1:'Brickface', 2:'Sky', 3:'Grey soil', 4:'Foliage', 5:'Window', 6:'Path', 7:'Grass'})
         df_class = df_class.value_counts()
         plt.gca().axis("equal")
         pie = plt.pie(df_class, startangle=0, autopct='%1.0f%%', colors=colors)
         # plt.title('Pie Chart Demonstration for Iris dataset', weight='bold', size=14)
-        plt.legend(pie[0], class_name, bbox_to_anchor=(1,0.5), loc="center right", fontsize=10,
-                bbox_transform=plt.gcf().transFigure)
+        plt.legend(pie[0], class_name_label, bbox_to_anchor=(1, 0.5), loc="center right", fontsize=10,
+                   bbox_transform=plt.gcf().transFigure)
         plt.subplots_adjust(left=0.0, bottom=0.1, right=0.75)
 
         plt.show()
         plt.clf()
         plt.close()
 
-def satimage_dataset(training_set=False,histogram=False, boxplot=False, pie=False):
+    if scatter2d:
+        pass
+    
+    if matrix:
+        pass
+
+    if parallel:
+        pass
+
+def satimage_dataset(training_set=False,histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=False):
     file_name = 'sat.trn' if training_set else 'sat.tst'
     sat_path = os.path.join(os.getcwd(), 'dataset', 'satimage', file_name)
     sat_features = [str(x) for x in range(1, 37)]
     central_features = ['17','18','19','20']
     df = pd.read_csv(sat_path, sep=' ', names=sat_features + ['class'])
-    df['class'] = df['class'].map({1:'Red soil', 2:'Cotton crop', 3:'Grey soil', 4:'Damp grey \nsoil', 5:'Soil with \nvegetation stubble', 7:'Very damp \ngrey soil'})
+    df['class'] = df['class'].map({1:'Red soil', 2:'Cotton crop', 3:'Grey soil', 4:'Damp grey soil', 5:'Soil with vegetation stubble', 7:'Very damp grey soil'})
     sat_data = df[sat_features]
 
     sat_classes = df['class']
@@ -220,12 +263,10 @@ def satimage_dataset(training_set=False,histogram=False, boxplot=False, pie=Fals
             plt.ylabel("Frequency")
             plt.xlabel(central_features[feature])
 
-        plt.legend(bbox_to_anchor=(1.25, 1.2), loc='center right')
+        plt.legend(bbox_to_anchor=(-0.2, -0.27), loc='lower center', ncol=len(class_name))
         plt.show()
 
-
     if boxplot:
-        
         box = plt.boxplot(df[central_features], patch_artist=True, labels=central_features)
         for patch, color in zip(box['boxes'], colors):
             patch.set_facecolor(color)
@@ -258,7 +299,7 @@ def satimage_dataset(training_set=False,histogram=False, boxplot=False, pie=Fals
         plt.gca().axis("equal")
         pie = plt.pie(df_class, startangle=0, autopct='%1.0f%%', colors=colors)
         # plt.title('Pie Chart Demonstration for Iris dataset', weight='bold', size=14)
-        plt.legend(pie[0], class_name, bbox_to_anchor=(1,0.5), loc="center right", fontsize=10, 
+        plt.legend(pie[0], class_name, bbox_to_anchor=(1,0.5), loc="center right", fontsize=10,
                 bbox_transform=plt.gcf().transFigure)
         plt.subplots_adjust(left=0.0, bottom=0.1, right=0.75)
 
@@ -266,9 +307,18 @@ def satimage_dataset(training_set=False,histogram=False, boxplot=False, pie=Fals
         plt.clf()
         plt.close()
 
+    if scatter2d:
+        pass
+    
+    if matrix:
+        pass
+
+    if parallel:
+        pass
+
 
 if __name__ == "__main__":
-    # iris_dataset(histogram=True, boxplot=True, pie=True)
-    # segment_dataset(histogram=True, boxplot=True, pie=True)
-    satimage_dataset(histogram=True, boxplot=True, pie=True)
+    iris_dataset(histogram=False, boxplot=False, pie=False, scatter2d=True, matrix=False, parallel=False)
+    segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=False)
+    satimage_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=False)
 
