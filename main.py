@@ -10,6 +10,9 @@ from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import f_classif
 import re
 from sklearn import preprocessing 
+import plotly.express as px
+from pandas.plotting import parallel_coordinates
+import plotly.graph_objects as go
 
 label_encoder = preprocessing.LabelEncoder() 
 
@@ -123,7 +126,17 @@ def iris_dataset(histogram=False, boxplot=True, pie=False, scatter2d=False, matr
     
 
     if parallel:
-        pass
+        colors_plt = ["rgb{}".format(hex_to_rgb(x)) for x in colors[:3]]
+        print(colors_plt)
+        # px.colors.diverging.Tealrose
+
+        df = px.data.iris()
+        fig = px.parallel_coordinates(df, color="species_id", labels={"species_id": "Species",
+                        "sepal_width": "Sepal Width", "sepal_length": "Sepal Length",
+                        "petal_width": "Petal Width", "petal_length": "Petal Length", },
+                                    color_continuous_scale=colors_plt,
+                                    )
+        fig.show()
 
 def segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=False):
     segment_path = os.path.join(os.getcwd(), 'dataset', 'segment', 'segment.dat')
