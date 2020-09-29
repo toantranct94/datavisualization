@@ -21,8 +21,9 @@ def hex_to_rgb(h):
 def iris_dataset(histogram=False, boxplot=True, pie=False, scatter2d=False, matrix=False, parallel=False):
     iris_path = os.path.join(os.getcwd(), 'dataset', 'iris', 'iris.data')
     iris_features = ["sepal_length", "sepal_width", "petal_length", "petal_width"]
+    features_titlize = [x.replace("_", " ").title() for x in iris_features]
     df = pd.read_csv(iris_path, sep=',', names=["sepal_length", "sepal_width", "petal_length", "petal_width", "class"])
-
+    
     iris_data = df[iris_features]
 
     iris_classes = np.array(df['class'])
@@ -55,8 +56,6 @@ def iris_dataset(histogram=False, boxplot=True, pie=False, scatter2d=False, matr
         plt.show()
 
     if boxplot:
-
-        features_titlize = [x.replace("_", " ").title() for x in iris_features]
         box = plt.boxplot(df[iris_features], patch_artist=True, labels=features_titlize)
         for patch, color in zip(box['boxes'], colors):
             patch.set_facecolor(color)
@@ -112,8 +111,16 @@ def iris_dataset(histogram=False, boxplot=True, pie=False, scatter2d=False, matr
             # plt.tight_layout()
             # plt.show()
             i += 2
+    
     if matrix:
-        pass
+        # Set your custom color palette
+        sns.set_palette(sns.color_palette(colors))
+        df1 = pd.read_csv(iris_path, sep=',', names=features_titlize + ['class'])
+        df1['class'] = df1['class'].str.replace('-',' ')
+        df1['class'] = df1['class'].str.title()
+        sns.pairplot(df1, hue="class", corner=True)
+        plt.show()
+    
 
     if parallel:
         pass
@@ -172,9 +179,10 @@ def segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, 
     colors = ['#EA4335', '#FBBC04', '#4285F4', '#34A853', '#97710C', '#FD8EBB', '#A610D8']
 
     sns.set()
+    segment_data = np.array(df[segment_features])
 
     if histogram:
-        segment_data = np.array(df[segment_features])
+        
         # Create array with 4 column of feature selected
         segment_data_select = np.empty([segment_data.shape[0], 0], dtype=float)
         for i in range(0, len(feature_selected)):
@@ -246,7 +254,14 @@ def segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, 
         pass
     
     if matrix:
-        pass
+        sns.set_palette(sns.color_palette(colors))
+        feature_selected_normalize = [x.replace("-", " ").title() for x in feature_selected]
+        df1 = df[feature_selected + ['class']]
+        df1 = df1.rename(columns=dict(zip(feature_selected, feature_selected_normalize)))
+        print(df1.head())
+        df1['class'] = df1['class'].map({1:'Brickface', 2:'Sky', 3:'Grey soil', 4:'Foliage', 5:'Window', 6:'Path', 7:'Grass'})
+        sns.pairplot(df1, hue="class", corner=True)
+        plt.show()
 
     if parallel:
         pass
@@ -342,14 +357,18 @@ def satimage_dataset(training_set=True,histogram=False, boxplot=False, pie=False
             i += 2
     
     if matrix:
-        pass
+        sns.set_palette(sns.color_palette(colors))
+        df1 = df[central_features + ['class']]
+        sns.pairplot(df1, hue="class", corner=True)
+        plt.show()
 
     if parallel:
         pass
 
 
 if __name__ == "__main__":
-    # iris_dataset(histogram=False, boxplot=False, pie=False, scatter2d=True, matrix=False, parallel=False)
-    # segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=True, matrix=False, parallel=False)
-    satimage_dataset(histogram=False, boxplot=False, pie=False, scatter2d=True, matrix=False, parallel=False)
+    # iris_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=True, parallel=False)
+    # segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=True, parallel=False)
+    satimage_dataset(training_set=True, histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=True, parallel=False)
+    # satimage_dataset(training_set=False,histogram=False, boxplot=False, pie=False, scatter2d=True, matrix=False, parallel=False)
 
