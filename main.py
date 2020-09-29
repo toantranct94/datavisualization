@@ -91,20 +91,27 @@ def iris_dataset(histogram=False, boxplot=True, pie=False, scatter2d=False, matr
         plt.close()
 
     if scatter2d:
+        # Plot sepal_length - sepal_width
+        # Plot petal_length - petal_width
         labels = label_encoder.fit_transform(iris_classes)
-        formatter = plt.FuncFormatter(lambda i, *args: labels[i])
-        # plt.figure(figsize=(5, 4))
-        plt.scatter(iris_data[iris_features[0]], iris_data[iris_features[1]], c=labels)
-        plt.colorbar(ticks=[0, 1, 2], format=formatter)
-        plt.xlabel(iris_features[0])
-        plt.ylabel(iris_features[1])
+        colors_for_label = df['class'].map({'Iris-setosa': colors[0], 'Iris-versicolor': colors[1], 'Iris-virginica': colors[2]})
+        i = 0
+        # formatter = plt.FuncFormatter(lambda i, *args: iris.target_names[int(i)])
+        while i <= 2:
+            for index, (n, grp) in enumerate(df.groupby("class")):
+                plt.scatter(grp.petal_length, grp.petal_width, label=n.replace('-', ' ').title(), c=colors[index])
+            plt.xlabel(iris_features[i].replace('_', ' ').title())
+            plt.ylabel(iris_features[i + 1].replace('_', ' ').title())
+            plt.legend()
+            plt.show()
 
-        plt.tight_layout()
-        plt.show()
-
-
-        pass
-    
+            # plt.scatter(iris_data[iris_features[i]], iris_data[iris_features[i + 1]], c=colors_for_label)
+            # plt.xlabel(iris_features[i].replace('_', ' ').title())
+            # plt.ylabel(iris_features[i + 1].replace('_', ' ').title())
+            # plt.legend(class_name)
+            # plt.tight_layout()
+            # plt.show()
+            i += 2
     if matrix:
         pass
 
@@ -131,17 +138,17 @@ def segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, 
     # Calculate colleration
     corr = df.corr(method='pearson')  # pearson kendall spearman
 
-    mask = np.zeros_like(corr, dtype=np.bool)
-    mask[np.triu_indices_from(mask)] = True
+    # mask = np.zeros_like(corr, dtype=np.bool)
+    # mask[np.triu_indices_from(mask)] = True
 
-    # Generate a custom diverging colormap
-    cmap = sns.diverging_palette(1, 200, as_cmap=True)
+    # # Generate a custom diverging colormap
+    # cmap = sns.diverging_palette(1, 200, as_cmap=True)
 
-    # Draw the heatmap with the mask and correct aspect ratio
+    # # Draw the heatmap with the mask and correct aspect ratio
     # sns.heatmap(corr, mask=mask, cmap=cmap, vmax=.3, center=0,
     #            square=True, linewidths=.5, cbar_kws={"shrink": .5}, annot=False)
-    # correlation = corr.values[-1][~np.isnan(corr.values[-1])]
-
+    # # correlation = corr.values[-1][~np.isnan(corr.values[-1])]
+    # plt.show()
     # Remove value 1 and nan
     correlation_value = corr.values[-1][~np.isnan(corr.values[-1])]
     correlation_value = [correlation_value[i] for i in range(0, len(correlation_value)) if
@@ -190,6 +197,12 @@ def segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, 
         plt.show()
 
     if boxplot:
+        features_titlize = [x.replace("-", " ").title() for x in feature_selected]
+        box = plt.boxplot(df[feature_selected], patch_artist=True, labels=features_titlize)
+        for patch, color in zip(box['boxes'], colors):
+            patch.set_facecolor(color)
+        plt.show()
+
         central_pixel = df[feature_selected + ['class']]
         plt.figure(figsize=(12,10))
         for i in range(len(feature_selected)):
@@ -220,6 +233,16 @@ def segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, 
         plt.close()
 
     if scatter2d:
+        i = 0
+        while i <= 2:
+            for index, (n, grp) in enumerate(df.groupby("class")):
+                plt.scatter(grp[feature_selected[i]], grp[feature_selected[i + 1]], label=class_name_label[index], c=colors[index])
+            plt.xlabel(feature_selected[i].replace('-', ' ').title())
+            plt.ylabel(feature_selected[i + 1].replace('-', ' ').title())
+            plt.legend()
+            plt.show()
+            i += 2
+
         pass
     
     if matrix:
@@ -228,7 +251,7 @@ def segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, 
     if parallel:
         pass
 
-def satimage_dataset(training_set=False,histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=False):
+def satimage_dataset(training_set=True,histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=False):
     file_name = 'sat.trn' if training_set else 'sat.tst'
     sat_path = os.path.join(os.getcwd(), 'dataset', 'satimage', file_name)
     sat_features = [str(x) for x in range(1, 37)]
@@ -308,7 +331,15 @@ def satimage_dataset(training_set=False,histogram=False, boxplot=False, pie=Fals
         plt.close()
 
     if scatter2d:
-        pass
+        i = 0
+        while i <= 2:
+            for index, (n, grp) in enumerate(df.groupby("class")):
+                plt.scatter(grp[central_features[i]], grp[central_features[i + 1]], label=n.title(), c=colors[index])
+            plt.xlabel(central_features[i])
+            plt.ylabel(central_features[i + 1])
+            plt.legend()
+            plt.show()
+            i += 2
     
     if matrix:
         pass
@@ -318,7 +349,7 @@ def satimage_dataset(training_set=False,histogram=False, boxplot=False, pie=Fals
 
 
 if __name__ == "__main__":
-    iris_dataset(histogram=False, boxplot=False, pie=False, scatter2d=True, matrix=False, parallel=False)
-    segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=False)
-    satimage_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=False)
+    # iris_dataset(histogram=False, boxplot=False, pie=False, scatter2d=True, matrix=False, parallel=False)
+    # segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=True, matrix=False, parallel=False)
+    satimage_dataset(histogram=False, boxplot=False, pie=False, scatter2d=True, matrix=False, parallel=False)
 
