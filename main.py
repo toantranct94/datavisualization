@@ -126,16 +126,22 @@ def iris_dataset(histogram=False, boxplot=True, pie=False, scatter2d=False, matr
     
 
     if parallel:
-        colors_plt = ["rgb{}".format(hex_to_rgb(x)) for x in colors[:3]]
-        print(colors_plt)
-        # px.colors.diverging.Tealrose
+        colors_plt = ["rgb{}".format(hex_to_rgb(x)) for x in colors[:len(class_name)]]
+        # print(colors_plt)
+        df_parallel = px.data.iris()
 
-        df = px.data.iris()
-        fig = px.parallel_coordinates(df, color="species_id", labels={"species_id": "Species",
+        fig = px.parallel_coordinates(df_parallel, color="species_id", labels={"species_id": "Species",
                         "sepal_width": "Sepal Width", "sepal_length": "Sepal Length",
                         "petal_width": "Petal Width", "petal_length": "Petal Length", },
-                                    color_continuous_scale=colors_plt,
+                                    color_continuous_scale=colors_plt
                                     )
+
+        fig.update_layout(
+            font=dict(
+                size=20
+            ),
+        )
+        
         fig.show()
 
 def segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=False):
@@ -277,7 +283,22 @@ def segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, 
         plt.show()
 
     if parallel:
-        pass
+        colors_plt = ["rgb{}".format(hex_to_rgb(x)) for x in colors[:len(class_name)]]
+        # print(colors_plt)
+        df_parallel = df[feature_selected + ['class']]
+        feature_selected_normalize = [x.replace("-", " ").title() for x in feature_selected]
+        dict_label = dict(zip(feature_selected, feature_selected_normalize))
+        dict_label['class'] = "Class"
+        fig = px.parallel_coordinates(df_parallel, color="class", labels=dict_label,
+                                    color_continuous_scale=colors_plt)
+                                    
+        fig.update_layout(
+            font=dict(
+                size=20
+            ),
+        )
+        
+        fig.show()
 
 def satimage_dataset(training_set=True,histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=False):
     file_name = 'sat.trn' if training_set else 'sat.tst'
@@ -376,12 +397,26 @@ def satimage_dataset(training_set=True,histogram=False, boxplot=False, pie=False
         plt.show()
 
     if parallel:
-        pass
+        colors_plt = ["rgb{}".format(hex_to_rgb(x)) for x in colors[:len(class_name)]]
+        df_parallel = df[central_features + ['class']]
+        df_parallel['class'] = df_parallel['class'].map({'Red soil': 1, 'Cotton crop': 2, 'Grey soil': 3, 'Damp grey soil': 4, 'Soil with vegetation stubble': 5, 'Very damp grey soil': 7})
+        dict_label = {}
+        dict_label['class'] = "Class"
+        fig = px.parallel_coordinates(df_parallel, color="class", labels=dict_label,
+                                    color_continuous_scale=colors_plt)
+                                    
+        fig.update_layout(
+            font=dict(
+                size=20
+            ),
+        )
+        
+        fig.show()
 
 
 if __name__ == "__main__":
-    # iris_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=True, parallel=False)
-    # segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=True, parallel=False)
-    satimage_dataset(training_set=True, histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=True, parallel=False)
+    # iris_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=True)
+    # segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=True)
+    satimage_dataset(training_set=True, histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=True)
     # satimage_dataset(training_set=False,histogram=False, boxplot=False, pie=False, scatter2d=True, matrix=False, parallel=False)
 
