@@ -1,0 +1,15 @@
+﻿"Số cơ sở khám, chữa bệnh phân theo loại cơ sở và phân theo cấp quản lý(*) by Loại cơ sở, Năm and Cấp quản lý"
+
+" ";"2015";" ";" ";" ";"2016";" ";" ";" ";"2017";" ";" ";" "
+" ";"Tổng số";"Bộ Y tế quản lý";"Sở y tế quản lý";"Các ngành khác quản lý";"Tổng số";"Bộ Y tế quản lý";"Sở y tế quản lý";"Các ngành khác quản lý";"Tổng số";"Bộ Y tế quản lý";"Sở y tế quản lý";"Các ngành khác quản lý"
+"TỔNG SỐ";13617;46;12791;780;13591;46;12779;766;13583;48;12769;766
+"Bệnh viện";1071;43;1002;26;1077;43;1012;22;1085;48;1015;22
+"Bệnh viện điều dưỡng và phục hồi chức năng";61;..;34;27;62;..;35;27;60;..;33;27
+"Bệnh viện da liễu";21;3;18;..;22;3;19;..;20;..;20;..
+"Nhà hộ sinh";11;..;11;..;9;..;9;..;9;..;9;..
+"Phòng khám đa khoa khu vực";630;..;613;17;609;..;602;7;579;..;572;7
+"Trạm y tế xã, phường, cơ quan, xí nghiệp";11823;..;11113;710;11812;..;11102;710;11830;..;11120;710
+"Trạm y tế của cơ quan, xí nghiệp";710;..;..;710;710;..;..;710;710;..;..;710
+
+"(*) Chưa bao gồm cơ sở tư nhân."
+

@@ -1,0 +1,15 @@
+﻿"Diện tích rừng trồng mới tập trung phân theo loại rừng (*) chia theo Diện tích và chỉ số phát triển, Năm và Loại rừng"
+
+" ";" ";"Tổng số";"Rừng sản xuất";"Rừng phòng hộ";"Rừng đặc dụng"
+"Diện tích (Nghìn ha)"
+" ";"2017";292.2;275.0;15.1;2.1
+" ";"2018";286.1;271.7;12.5;1.9
+" ";"Sơ bộ 2019";269.0;256.5;11.1;1.4
+"Chỉ số phát triển (Năm trước =100) - %"
+" ";"2017";106.7;110.1;66.8;150.0
+" ";"2018";97.9;98.8;82.8;90.5
+" ";"Sơ bộ 2019";94.0;94.4;88.8;73.7
+
+"(*) Số liệu từ năm 2010-2016 điều chỉnh theo số liệu điều tra "
+"nãm 2017 và 2018."
+
