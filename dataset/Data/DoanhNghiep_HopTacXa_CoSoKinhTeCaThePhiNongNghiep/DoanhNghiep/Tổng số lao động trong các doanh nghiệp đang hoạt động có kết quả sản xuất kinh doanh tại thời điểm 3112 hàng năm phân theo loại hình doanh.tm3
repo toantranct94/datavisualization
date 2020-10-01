@@ -1,0 +1,28 @@
+1	2	2017	2018	So bo 2019
+STRING	STRING	FLOAT	FLOAT	FLOAT
+Nghin nguoi	TONG SO	12856,9	14012,3	14512,2
+Nghin nguoi	Doanh nghiep Nha nuoc	1371,6	1285,9	1201,8
+Nghin nguoi	DN 100% von nha nuoc	779,1	745,1	704,6
+Nghin nguoi	DN hon 50% von nha nuoc	592,5	540,8	497,2
+Nghin nguoi	Doanh nghiep ngoai Nha nuoc	7712,6	8572,4	8800,3
+Nghin nguoi	Tu nhan	470,2	472,5	393,5
+Nghin nguoi	Cong ty hop danh	4,5	6,2	5,3
+Nghin nguoi	Cong ty TNHH	4103,8	4608,9	4840,9
+Nghin nguoi	Cong ty co phan co von Nha nuoc	353,8	336,3	313,3
+Nghin nguoi	Cong ty co phan khong co von Nha nuoc	2780,3	3148,6	3247,3
+Nghin nguoi	Doanh nghiep co von dau tu nuoc ngoai	3772,7	4154,0	4510,1
+Nghin nguoi	DN 100% von nuoc ngoai	3469,7	3817,9	4180,0
+Nghin nguoi	DN lien doanh voi nuoc ngoai	303,0	336,1	330,1
+Co cau (%)	TONG SO	100,00	100,00	100,00
+Co cau (%)	Doanh nghiep Nha nuoc	10,67	9,18	8,28
+Co cau (%)	DN 100% von nha nuoc	6,06	5,32	4,86
+Co cau (%)	DN hon 50% von nha nuoc	4,61	3,86	3,42
+Co cau (%)	Doanh nghiep ngoai Nha nuoc	59,99	61,17	60,65
+Co cau (%)	Tu nhan	3,66	3,37	2,71
+Co cau (%)	Cong ty hop danh	0,04	0,04	0,04
+Co cau (%)	Cong ty TNHH	31,92	32,89	33,36
+Co cau (%)	Cong ty co phan co von Nha nuoc	2,75	2,40	2,16
+Co cau (%)	Cong ty co phan khong co von Nha nuoc	21,63	22,47	22,38
+Co cau (%)	Doanh nghiep co von dau tu nuoc ngoai	29,34	29,65	31,07
+Co cau (%)	DN 100% von nuoc ngoai	26,99	27,25	28,80
+Co cau (%)	DN lien doanh voi nuoc ngoai	2,36	2,40	2,27

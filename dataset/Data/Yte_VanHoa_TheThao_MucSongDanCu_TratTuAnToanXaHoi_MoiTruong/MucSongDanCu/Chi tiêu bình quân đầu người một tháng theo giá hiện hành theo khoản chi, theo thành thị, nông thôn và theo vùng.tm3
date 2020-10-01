@@ -1,0 +1,29 @@
+1	Chi cho đời sống	Chi không phải ăn uống, hút	Chi tiêu khác	Chi ăn uống, hút	Tổng chi tiêu
+STRING	STRING	FLOAT	FLOAT	FLOAT	FLOAT
+CA NUOC	2014	1888	836	2016	141
+CA NUOC	2016	1763	125	1027	2546
+CA NUOC	So bo 2018	927	2157	989	2368
+Thanh thi	2014	2613	1222	2886	173
+Thanh thi	2016	2461	152	1404	3496
+Thanh thi	So bo 2018	1239	3059	1482	3285
+Nong thon	2014	1557	660	1609	126
+Nong thon	2016	1444	113	851	2069
+Nong thon	So bo 2018	784	1735	758	1908
+Dong bang song Hong	2014	2241	1003	2364	164
+Dong bang song Hong	2016	2082	159	1151	3018
+Dong bang song Hong	So bo 2018	1079	2528	1213	2812
+Trung du va mien nui phia Bac	2014	1538	689	1551	104
+Trung du va mien nui phia Bac	2016	1441	97	824	2000
+Trung du va mien nui phia Bac	So bo 2018	752	1655	727	1869
+Bac Trung Bo va Duyen hai mien Trung	2014	1647	687	1685	124
+Bac Trung Bo va Duyen hai mien Trung	2016	1537	110	918	2182
+Bac Trung Bo va Duyen hai mien Trung	So bo 2018	850	1809	767	2030
+Tay Nguyen	2014	1660	760	1620	146
+Tay Nguyen	2016	1537	123	828	2234
+Tay Nguyen	So bo 2018	777	1766	792	2053
+Dong Nam Bo	2014	2410	1127	2846	172
+Dong Nam Bo	2016	2282	128	1415	3349
+Dong Nam Bo	So bo 2018	1155	3018	1431	3149
+Dong bang song Cuu Long	2014	1602	679	1741	131
+Dong bang song Cuu Long	2016	1484	118	888	2237
+Dong bang song Cuu Long	So bo 2018	805	1872	853	2045

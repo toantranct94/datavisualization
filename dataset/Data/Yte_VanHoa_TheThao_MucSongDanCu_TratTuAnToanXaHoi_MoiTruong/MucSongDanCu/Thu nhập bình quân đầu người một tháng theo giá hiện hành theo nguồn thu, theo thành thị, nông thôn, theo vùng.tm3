@@ -1,0 +1,35 @@
+1	Các khoản thu khác	Tổng số	Thu từ tiền lương, tiền công	Thu từ nông, lâm nghiệp, thủy sản	Thu phi nông, lâm nghiệp, thủy sản
+STRING	STRING	FLOAT	FLOAT	FLOAT	FLOAT
+CA NUOC	2016	3098	748	1981	497
+CA NUOC	2018	1487	353	516	4295
+CA NUOC	So bo 2019	510	3876	882	2350
+Thanh thi	2016	4551	1291	3258	740
+Thanh thi	2018	2537	528	196	6022
+Thanh thi	So bo 2019	195	5623	1429	3719
+Nong thon	2016	2423	495	1333	375
+Nong thon	2018	999	273	678	3399
+Nong thon	So bo 2019	656	2990	605	1640
+Chu ho la nam	2016	3000	728	1836	427
+Chu ho la nam	2018	1378	312	589	4132
+Chu ho la nam	So bo 2019	582	3725	872	2195
+Chu ho la nu	2016	3439	816	2447	724
+Chu ho la nu	2018	1869	496	280	4828
+Chu ho la nu	So bo 2019	258	4364	913	2858
+Dong bang song Hong	2016	3883	924	2795	631
+Dong bang song Hong	2018	2106	478	330	5191
+Dong bang song Hong	So bo 2019	375	4834	1078	3106
+Trung du va mien nui phia Bac	2016	1963	355	1190	259
+Trung du va mien nui phia Bac	2018	883	190	514	2640
+Trung du va mien nui phia Bac	So bo 2019	535	2455	492	1370
+Bac Trung Bo va duyen hai mien Trung	2016	2358	546	1476	418
+Bac Trung Bo va duyen hai mien Trung	2018	1108	282	445	3331
+Bac Trung Bo va duyen hai mien Trung	So bo 2019	422	3015	676	1716
+Tay Nguyen	2016	2366	500	1084	236
+Tay Nguyen	2018	805	133	982	3095
+Tay Nguyen	So bo 2019	928	2896	594	1208
+Dong Nam Bo	2016	4662	1320	3297	667
+Dong Nam Bo	2018	2520	480	303	6280
+Dong Nam Bo	So bo 2019	342	5709	1443	3898
+Dong bang song Cuu Long	2016	2778	664	1335	567
+Dong bang song Cuu Long	2018	969	380	877	3886
+Dong bang song Cuu Long	So bo 2019	765	3588	809	1597

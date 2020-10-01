@@ -1,0 +1,8 @@
+1	2	Tong dien tich (Nghin ha)	Dien tich Lua dong xuan (Nghin ha)	Dien tich Lua he thu (Nghin ha)	Dien tich Lua mua (Nghin ha)	Tong san luong (Nghin tan)	San luong Lua dong xuan (Nghin tan)	San luong Lua he thu (Nghin tan)	San luong Lua mua (Nghin tan)
+STRING	STRING	FLOAT	FLOAT	FLOAT	FLOAT	FLOAT	FLOAT	FLOAT	FLOAT
+Gia tri	2017	7705.2	3117.1	2876.7	1711.4	42738.9	19415.8	15461.2	7861.9
+Gia tri	2018	7570.9	3102.1	2784.8	1683.3	44046.0	20603.0	15176.4	8265.0
+Gia tri	So bo 2019	7470.1	3123.9	2734.4	1611.8	43448.2	20470.0	14896.4	8079.7
+Chi so phat trien (Nam truoc =100) - %	2017	99.6	99.6	100.1	98.6	99.0	98.8	101.5	94.9
+Chi so phat trien (Nam truoc =100) - %	2018	98.3	99.5	96.8	98.4	103.1	106.1	98.2	105.1
+Chi so phat trien (Nam truoc =100) - %	So bo 2019	98.7	100.7	98.2	95.8	98.6	99.4	98.2	97.8

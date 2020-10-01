@@ -1,0 +1,8 @@
+1	2	Tong so	Duong sat	Duong bo	Duong song	Duong hang khong
+STRING	STRING	FLOAT	FLOAT	FLOAT		
+Luot hanh khach (Trieu luot nguoi)	2017	4027.1	9.5	3793.2	179.9	44.5
+Luot hanh khach (Trieu luot nguoi)	2018	4291.5	8.7	4004.7	229.0	49.1
+Luot hanh khach (Trieu luot nguoi)	So bo 2019	4769.0	8.1	4464.2	241.7	55.0
+Chi so phat trien (Nam truoc =100)-%	2017	111.1	96.9	111.5	104.0	115.3
+Chi so phat trien (Nam truoc =100)-%	2018	106.6	91.4	105.6	127.3	110.3
+Chi so phat trien (Nam truoc =100)-%	So bo 2019	111.1	92.4	111.5	105.6	112.1

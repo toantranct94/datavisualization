@@ -1,0 +1,14 @@
+1	2	Tong so	Kinh te Nha nuoc	Kinh te ngoai nha nuoc	Khu vuc co von dau tu nuoc ngoai
+STRING	STRING	FLOAT	FLOAT	FLOAT	FLOAT
+Gia thuc te (Ty dong)	2017	1670196.0	596096.0	677900.0	396200.0
+Gia thuc te (Ty dong)	2018	1857061.0	618661.0	803298.0	435102.0
+Gia thuc te (Ty dong)	So bo 2019	2046838.0	634948.0	942449.0	469441.0
+Co cau(%)	2017	100.0	35.7	40.6	23.7
+Co cau(%)	2018	100.0	33.3	43.3	23.4
+Co cau(%)	So bo 2019	100.0	31.0	46.0	23.0
+Gia so sanh 2010 (Ty dong)	2017	1271797.0	452862.0	515163.0	303772.0
+Gia so sanh 2010 (Ty dong)	2018	1379552.0	458092.0	596017.0	325443.0
+Gia so sanh 2010 (Ty dong)	So bo 2019	1488839.0	460942.0	685055.0	342842.0
+Chi so phat trien (Nam truoc = 100)-%	2017	110.9	105.2	115.3	112.4
+Chi so phat trien (Nam truoc = 100)-%	2018	108.5	101.2	115.7	107.1
+Chi so phat trien (Nam truoc = 100)-%	So bo 2019	107.9	100.6	114.9	105.3
