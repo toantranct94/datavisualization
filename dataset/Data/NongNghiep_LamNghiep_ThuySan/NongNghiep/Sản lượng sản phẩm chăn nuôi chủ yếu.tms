@@ -1,0 +1,67 @@
+false
+S?n l??ng s?n ph?m ch?n nuôi ch? y?u.tm3
+TREEMAP VERSION	Treemap 4.1
+FLIP_SLICE_AND_DICE	false
+PARTITIONING_METHOD	1
+NOMINAL_ATTRIBUTE	1
+3	8
+true
+true
+true
+true
+true
+true
+true
+true
+LABEL_ATTRIBUTE_INDEX	3
+SIZE_ATTRIBUTE_NUMERIC_INDEX	-1
+COLOR_ATTRIBUTE_INDEX	0
+AUTOHIDE	false
+VISIBLE_POPUP	true
+DIRECTORY_MAPPING_DATA	false
+FONT_SIZE	20
+BORDER_SIZE	3
+ALL_NOMINAL_STRINGS_TO_COLORS	1
+0
+8
+San luong thit bo hoi xuat chuong (Nghin tan)	3	255	153	153
+San luong thit lon hoi xuat chuong (Nghin tan)	5	52	168	83
+San luong mat ong (Tan)	1	252	201	54
+San luong ken tam (Tan)	0	255	138	52
+San luong thit gia cam hoi giet, ban (Nghin tan)	4	151	113	2
+San luong thit trau hoi xuat chuong (Nghin tan)	6	0	255	102
+San luong sua tuoi (Trieu lit)	2	102	102	255
+Trung gia cam (Trieu qua)	7	234	67	53
+COLOR_BINNING_PROPERTIES
+0	88.00	18755.199	1	0	0	0	0	255	0
+0	92.10	20414.801	1	0	0	0	0	255	0
+0	94.50	21847.301	1	0	0	0	0	255	0
+HIERARCHY_HISTORY
+1
+Hierarchy: 1	1
+-1	
+0
+-1	-1
+BINNING_PROPERTIES
+0	88.00	18755.199	1
+0	92.10	20414.801	1
+0	94.50	21847.301	1
+USER_MAXIMUM_DEPTH	1
+HIDE_LEAF_LABEL	true
+NUMERICAL_ATTRIBUTE_USER_MINIMA	3
+false	87
+false	91
+false	93
+NUMERICAL_ATTRIBUTE_USER_MAXIMA	3
+false	18756
+false	20415
+false	21848
+AGGREGATE_FUNCTION	3
+1	1
+2	1
+3	1
+HIGHLIGHTED_NODE	0
+TREEMAP_TITLE	S?n l??ng s?n ph?m ch?n nuôi ch? y?u.tm3
+NO_BORDER	true
+USER_ROOT	-1
+END_SETTINGS

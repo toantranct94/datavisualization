@@ -1,4 +1,4 @@
-0	1	2	3	4
+San pham	Thanh phan KT	2017	2018	So bo 2019
 STRING	STRING	FLOAT	FLOAT	FLOAT
 Than sach (Nghin tan)	Tong so	38409.0	42384.0	46387.0
 Than sach (Nghin tan)	Nha nuoc	37452.0	41411.0	45696.0
@@ -6,10 +6,10 @@ Than sach (Nghin tan)	Ngoai Nha nuoc	496.0	548.0	603.0
 Than sach (Nghin tan)	DTNN	461.0	425.0	88.0
 Dau tho khai thac  (Nghin tan)	Tong so	15518.0	13969.0	13090.0
 Dau tho khai thac  (Nghin tan)	Nha nuoc	365.0	418.0	405.0
-Dau tho khai thac  (Nghin tan)	Ngoai Nha nuoc	..	..	..
+Dau tho khai thac  (Nghin tan)	Ngoai Nha nuoc	0	0	0
 Dau tho khai thac  (Nghin tan)	DTNN	15153.0	13551.0	12685.0
 Muoi bien (Nghin tan)	Tong so	648.5	996.5	912.9
-Muoi bien (Nghin tan)	Nha nuoc	..	..	..
+Muoi bien (Nghin tan)	Nha nuoc	0	0	0
 Muoi bien (Nghin tan)	Ngoai Nha nuoc	631.9	945.6	861.7
 Muoi bien (Nghin tan)	DTNN	16.6	50.9	51.2
 Duong kinh (Nghin tan)	Tong so	1747.5	1902.6	1812.8
@@ -19,7 +19,7 @@ Duong kinh (Nghin tan)	DTNN	225.9	255.3	243.7
 Phan hoa hoc (Nghin tan)	Tong so	3677.0	4042.5	3747.4
 Phan hoa hoc (Nghin tan)	Nha nuoc	3434.4	3744.1	3412.9
 Phan hoa hoc (Nghin tan)	Ngoai Nha nuoc	242.6	298.4	334.5
-Phan hoa hoc (Nghin tan)	DTNN	..	..	..
+Phan hoa hoc (Nghin tan)	DTNN	0	0	0
 Phan NPK (Nghin tan)	Tong so	3241.5	3323.8	3335.9
 Phan NPK (Nghin tan)	Nha nuoc	1804.0	1809.2	1808.6
 Phan NPK (Nghin tan)	Ngoai Nha nuoc	1038.1	1049.9	1062.6

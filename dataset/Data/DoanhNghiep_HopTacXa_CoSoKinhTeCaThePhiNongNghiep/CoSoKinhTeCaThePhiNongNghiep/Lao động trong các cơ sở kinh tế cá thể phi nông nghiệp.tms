@@ -1,0 +1,91 @@
+false
+Lao ??ng trong các c? s? kinh t? cá th? phi nông nghi?p.tm3
+TREEMAP VERSION	Treemap 4.1
+FLIP_SLICE_AND_DICE	false
+PARTITIONING_METHOD	1
+NOMINAL_ATTRIBUTE	1
+3	20
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+LABEL_ATTRIBUTE_INDEX	-2
+SIZE_ATTRIBUTE_NUMERIC_INDEX	-1
+COLOR_ATTRIBUTE_INDEX	0
+AUTOHIDE	false
+VISIBLE_POPUP	true
+DIRECTORY_MAPPING_DATA	false
+FONT_SIZE	20
+BORDER_SIZE	3
+ALL_NOMINAL_STRINGS_TO_COLORS	1
+0
+20
+Van tai, kho bai	17	254	0	127
+Nghe thuat, vui choi va giai tri	12	127	127	254
+TONG SO	14	127	254	127
+Xay dung	18	254	0	254
+San xuat va phan phoi dien, khi dot, nuoc nong, hoi nuoc va dieu hoa khong khi	13	127	254	0
+Y te va hoat dong cuu tro xa hoi	19	254	127	0
+Dich vu, luu tru va an uong	4	151	113	2
+Cong nghiep che bien, che tao	1	252	201	54
+Thong tin truyen thong	15	127	254	254
+Hoat dong kinh doanh bat dong san	9	102	255	153
+Khai khoang	11	127	127	0
+Hoat dong tai chinh, ngan hang, bao hiem	10	107	202	209
+Cong nghiep va xay dung	2	102	102	255
+Ban buon; ban le; sua chua o to, mo to, xe may va xe co dong co khac	0	255	138	52
+Cung cap nuoc; hoat dong quan ly va xu ly rac thai	3	255	153	153
+Hoat dong hanh chinh va dich vu ho tro	8	255	255	128
+Hoat dong dich vu khac	7	234	67	53
+Thuong mai, dich vu	16	254	0	0
+Giao duc va dao tao	5	52	168	83
+Hoat dong chuyen mon, khoa hoc va cong nghe	6	0	255	102
+COLOR_BINNING_PROPERTIES
+0	7613.00	8261870.00	1	0	0	0	0	255	0
+0	9907.00	8701319.00	1	0	0	0	0	255	0
+0	10016.00	8781085.00	1	0	0	0	0	255	0
+HIERARCHY_HISTORY
+1
+Hierarchy: 1	1
+-1	
+0
+-1	-1
+BINNING_PROPERTIES
+0	7613.00	8261870.00	1
+0	9907.00	8701319.00	1
+0	10016.00	8781085.00	1
+USER_MAXIMUM_DEPTH	1
+HIDE_LEAF_LABEL	true
+NUMERICAL_ATTRIBUTE_USER_MINIMA	3
+false	7612
+false	9906
+false	10015
+NUMERICAL_ATTRIBUTE_USER_MAXIMA	3
+false	8261871
+false	8701320
+false	8781086
+AGGREGATE_FUNCTION	3
+1	1
+2	1
+3	1
+HIGHLIGHTED_NODE	0
+TREEMAP_TITLE	Lao ??ng trong các c? s? kinh t? cá th? phi nông nghi?p.tm3
+NO_BORDER	true
+USER_ROOT	-1
+END_SETTINGS

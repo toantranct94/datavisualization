@@ -28,8 +28,8 @@ def danso(filename='Dân số trung bình phân theo địa phương, giới tí
     number_of_feature = len(cols)
     cols = [unidecode(x) for x in cols]
     results = []
-    datatypes = ['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT']
-    datatypes = datatypes[:number_of_feature]
+    datatypes = ['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT']
+    # datatypes = datatypes[:number_of_feature]
     results.append(datatypes)
     for index, place in enumerate(places):
         vals = df.iloc[index + 1,:].values
@@ -42,7 +42,8 @@ def danso(filename='Dân số trung bình phân theo địa phương, giới tí
                 results[0] = ['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT']
                 results.append([place.replace(' ', '_'), str(rows[i]), vals[i + 1 + 3 * 0], vals[i + 1 + 3 * 1], vals[i + 1 + 3 * 2]])
                     # print(results)    
-    labels = ['1', '2'] + cols
+    results = [x if x != '..' else 0 for x in results]
+    labels = ['Vung', 'Nam'] + cols
     df = pd.DataFrame(results, columns=labels)
     
     df.to_csv(os.path.join(os.getcwd(), 'dataset', 'Data', 'DanSo_LaoDong', 'DanSo', '{}.tm3'.format(filename)), sep='\t', index=False)
@@ -51,10 +52,13 @@ def laodong(filename='laodong_15t_cachtinh_nhomtuoi_nam', number_of_year=3):
     path = os.path.join(os.getcwd(), 'dataset', 'Data', 'DanSo_LaoDong', 'LaoDong', '{}.csv'.format(filename))
     # df = read_csv_file(path=path)
     df = pd.read_csv(path, skiprows=1, sep=';')
-
+    if filename == 'Lực lượng lao động từ 15 tuổi trở lên phân theo giới tính và phân theo thành thị, nông thôn':
+        datatypes = [['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT']]
+    else:
+        datatypes = [['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT']]
     number_of_feature = 4
     cols = df.columns.values[1:].tolist()
-    cols = ['1', '2'] + cols[1:]
+    cols = ['Tong so/Co cau', 'Nam'] + cols[1:]
     cols = [unidecode(x) for x in cols]
     features = df.iloc[:,0].values.tolist()
     features = [unidecode(x) for x in features]
@@ -69,7 +73,8 @@ def laodong(filename='laodong_15t_cachtinh_nhomtuoi_nam', number_of_year=3):
     for index, (feature, val) in enumerate(zip(features, df)):
         val[0] = feature
         df[index] = [unidecode(x) if type(x) is str else x for x in val]
-    datatypes = [['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT']]
+        df[index] = [x if x != '..' else 0 for x in df[index]]
+    # datatypes = [['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT']]
     df = datatypes + df
     df = pd.DataFrame(df, columns=cols)
 
@@ -111,7 +116,7 @@ def congnghiep(filename='congnghiep'):
     path = os.path.join(os.getcwd(), 'dataset', 'Data', 'CongNghiep_DauTu_XayDung', 'CongNghiep', '{}.csv'.format(filename))
     df = pd.read_csv(path, skiprows=1, sep=';')
     cols = df.columns.values[1:].tolist()
-    cols = ['1', '2'] + cols[1:]
+    cols = ['San pham', 'Thanh phan KT'] + cols[1:]
     cols = [unidecode(x) for x in cols]
     features = df.iloc[:,0].values.tolist()
     features = [unidecode(x) for x in features]
@@ -123,11 +128,11 @@ def congnghiep(filename='congnghiep'):
 
     for index, (feature, val) in enumerate(zip(features, df)):
         val[0] = feature
-        df[index] = [unidecode(x) for x in val]
+        df[index] = [unidecode(x) if x != '..' else '0' for x in val]
 
     datatypes = [['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT']]
     df = datatypes + df
-    df = pd.DataFrame(df)
+    df = pd.DataFrame(df, columns=cols)
     df.to_csv(os.path.join(os.getcwd(), 'dataset', 'Data', 'CongNghiep_DauTu_XayDung', 'CongNghiep', '{}.tm3'.format(filename)), sep='\t', index=False)
 
 def dautu(filename='vondautu_thanhphankt_cachtinh_nam'):
@@ -135,7 +140,7 @@ def dautu(filename='vondautu_thanhphankt_cachtinh_nam'):
     df = pd.read_csv(path, skiprows=1, sep=';')
 
     cols = df.columns.values[1:].tolist()
-    cols = ['1', '2'] + cols[1:]
+    cols = ['Cach tinh', 'Nam'] + cols[1:]
     cols = [unidecode(x) for x in cols]
     features = df.iloc[:,0].values.tolist()
     features = [unidecode(x) for x in features]
@@ -147,6 +152,7 @@ def dautu(filename='vondautu_thanhphankt_cachtinh_nam'):
     for index, (feature, val) in enumerate(zip(features, df)):
         val[0] = feature
         df[index] = [unidecode(x) if type(x) is str else x for x in val]
+        df[index] = [x if x != '..' else '0' for x in df[index]]
 
     datatypes = [['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT']]
     df = datatypes + df
@@ -156,15 +162,20 @@ def dautu(filename='vondautu_thanhphankt_cachtinh_nam'):
 def xaydung(filename='dientich_xaydung_loainha_nam'):
     path = os.path.join(os.getcwd(), 'dataset', 'Data', 'CongNghiep_DauTu_XayDung', 'XayDung', '{}.csv'.format(filename))
     df = read_csv_file(path=path)
-    print(df)
+    # print(df)
+    if filename == 'Diện tích sàn xây dựng nhà ở hoàn thành trong năm phân theo loại nhà':
+        typed = ['Loai nha'] 
+    else:
+        typed = ['Vung'] 
     cols = df.columns.values[1:].tolist()
     cols = [unidecode(x) for x in cols]
-    cols = ['1'] + cols
+    cols = typed + cols
     datatypes = ['STRING', 'FLOAT', 'FLOAT', 'FLOAT']
 
     df[df.columns[0]] = df[df.columns[0]].apply(unidecode)
     df = df.iloc[::-1]
     df = df.values.tolist()
+    df = [x if x != '..' else 0 for x in df]
     df.append(datatypes)
     df = pd.DataFrame(df, columns=cols)
     df = df.iloc[::-1]
@@ -174,19 +185,29 @@ def lamnghiep(filename='Diện tích rừng trồng mới tập trung phân theo
     path = os.path.join(os.getcwd(), 'dataset', 'Data', 'NongNghiep_LamNghiep_ThuySan', 'LamNghiep', '{}.csv'.format(filename))
     df = pd.read_csv(path, skiprows=1, sep=';')
     print(df)
+    if filename == 'Diện tích rừng trồng mới tập trung phân theo loại rừng':
+        number_of_feature = 4
+    else:
+        number_of_feature = 8
+        
     cols = df.columns.values[1:].tolist()
-    cols = ['1', '2'] + cols[1:]
+    cols = ['1', 'Nam'] + cols[1:]
     cols = [unidecode(x) for x in cols]
     features = df.iloc[:,0].values.tolist()
     features = [unidecode(x) for x in features]
-    features = features[::4]
-    features = [x for item in features for x in repeat(item, 3)]
+    features = features[::number_of_feature]
+
+    if number_of_feature == 8:
+        features = features[:-1]
+
+    features = [x for item in features for x in repeat(item, number_of_feature - 1)]
     df = df.dropna()
     df = df.values.tolist()
     
     for index, (feature, val) in enumerate(zip(features, df)):
         val[0] = feature
         df[index] = [unidecode(x) if type(x) is str else x for x in val]
+        df[index] = [x if x != '..' else '0' for x in df[index]]
 
     try:
         datatypes = [['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT']]
@@ -210,7 +231,7 @@ def nongnghiep(filename='Diện tích và sản lượng lúa cả năm'):
     df = pd.read_csv(path, skiprows=1, sep=';')
     print(df)
     cols = df.columns.values[1:].tolist()
-    cols = ['1', '2'] + cols[1:]
+    cols = ['Gia tri/Chi so phat trien', 'Nam'] + cols[1:]
     cols = [unidecode(x) for x in cols]
     features = df.iloc[:,0].values.tolist()
     features = [unidecode(x) for x in features]
@@ -222,6 +243,7 @@ def nongnghiep(filename='Diện tích và sản lượng lúa cả năm'):
     for index, (feature, val) in enumerate(zip(features, df)):
         val[0] = feature
         df[index] = [unidecode(x) if type(x) is str else x for x in val]
+        df[index] = [x if x != '..' else '0' for x in df[index]]
 
     try:
         datatypes = [['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT']]
@@ -243,7 +265,7 @@ def nongnghiep1(filename='Sản lượng sản phẩm chăn nuôi chủ yếu'):
     df = pd.read_csv(path, skiprows=1, sep=';')
     cols = df.columns.values[1:].tolist()
     cols = [unidecode(x) for x in cols]
-    cols = ['1'] + cols
+    cols = ['San luong'] + cols
     datatypes = ['STRING', 'FLOAT', 'FLOAT', 'FLOAT']
     df[df.columns[0]] = df[df.columns[0]].apply(unidecode)
     df = df.iloc[::-1]
@@ -259,11 +281,12 @@ def thuysan(filename='Diện tích nuôi trồng thủy sản'):
     df = pd.read_csv(path, skiprows=1, sep=';')
     cols = df.columns.values[1:].tolist()
     cols = [unidecode(x) for x in cols]
-    cols = ['1'] + cols
+    cols = ['Dien tich'] + cols
     datatypes = ['STRING', 'FLOAT', 'FLOAT', 'FLOAT']
     df[df.columns[0]] = df[df.columns[0]].apply(unidecode)
     df = df.iloc[::-1]
     df = df.values.tolist()
+    df = [x if x != '..' else 0 for x in df]
     df.append(datatypes)
     df = pd.DataFrame(df, columns=cols)
     df = df.iloc[::-1]
@@ -274,7 +297,7 @@ def thuysan1(filename='Sản lượng thuỷ sản'):
     df = pd.read_csv(path, skiprows=1, sep=';')
     number_of_feature = 4
     cols = df.columns.values[1:].tolist()
-    cols = ['1', '2'] + cols[1:]
+    cols = ['San luong', 'Nam'] + cols[1:]
     cols = [unidecode(x) for x in cols]
     features = df.iloc[:,0].values.tolist()
     features = [unidecode(x) for x in features]
@@ -282,6 +305,7 @@ def thuysan1(filename='Sản lượng thuỷ sản'):
     features = [x for item in features for x in repeat(item, number_of_feature - 1)]
     df = df.dropna()
     df = df.values.tolist()
+    df = [x if x != '..' else 0 for x in df]
     for index, (feature, val) in enumerate(zip(features, df)):
         val[0] = feature
         df[index] = [unidecode(x) if type(x) is str else x for x in val]
@@ -295,11 +319,12 @@ def cosokinhte(filename='Lao động trong các cơ sở kinh tế cá thể phi
     df = pd.read_csv(path, skiprows=1, sep=';')
     cols = df.columns.values[1:].tolist()
     cols = [unidecode(x) for x in cols]
-    cols = ['1'] + cols
+    cols = ['Nganh kinh te'] + cols
     datatypes = ['STRING', 'FLOAT', 'FLOAT', 'FLOAT']
     df[df.columns[0]] = df[df.columns[0]].apply(unidecode)
     df = df.iloc[::-1]
     df = df.values.tolist()
+    df = [x if x != '..' else '0' for x in df]
     df.append(datatypes)
     df = pd.DataFrame(df, columns=cols)
     df = df.iloc[::-1]
@@ -312,7 +337,7 @@ def doanhnghiep(filename='Doanh thu thuần sản xuất kinh doanh của các d
     # print(df)
     number_of_feature = 14
     cols = df.columns.values[1:].tolist()
-    cols = ['1', '2'] + cols[1:]
+    cols = ['Don vi', 'Loai hinh'] + cols[1:]
     cols = [unidecode(x) for x in cols]
     features = df.iloc[:,0].values.tolist()
     features = [unidecode(x) for x in features]
@@ -320,10 +345,12 @@ def doanhnghiep(filename='Doanh thu thuần sản xuất kinh doanh của các d
     features = [x for item in features for x in repeat(item, number_of_feature - 1)]
     df = df.dropna()
     df = df.values.tolist()
-    
+    # print(df)
     for index, (feature, val) in enumerate(zip(features, df)):
         val[0] = feature
+        val = [float(x.replace(',', '.')) if val.index(x) >= 2 else x for x in val]
         df[index] = [unidecode(x) if type(x) is str else x for x in val]
+        df[index] = [x if x != '..' else 0 for x in df[index]]
 
     datatypes = [['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT']]
     df = datatypes + df
@@ -337,11 +364,12 @@ def hoptacxa(filename='Số hợp tác xã phân theo địa phương'):
     # print(df)
     cols = df.columns.values[1:].tolist()
     cols = [unidecode(x) for x in cols]
-    cols = ['1'] + cols
+    cols = ['Dia phuong'] + cols
     datatypes = ['STRING', 'FLOAT', 'FLOAT', 'FLOAT']
     df[df.columns[0]] = df[df.columns[0]].apply(unidecode)
     df = df.iloc[::-1]
     df = df.values.tolist()
+    df = [x if x != '..' else 0 for x in df]
     df.append(datatypes)
     df = pd.DataFrame(df, columns=cols)
     df = df.iloc[::-1]
@@ -354,7 +382,7 @@ def vantai(filename='Số lượt hành khách luân chuyển phân theo ngành 
     # print(df)
     number_of_feature = 4
     cols = df.columns.values[1:].tolist()
-    cols = ['1', '2'] + cols[1:]
+    cols = ['1', 'Nam'] + cols[1:]
     cols = [unidecode(x) for x in cols]
     features = df.iloc[:,0].values.tolist()
     features = [unidecode(x) for x in features]
@@ -366,7 +394,7 @@ def vantai(filename='Số lượt hành khách luân chuyển phân theo ngành 
     for index, (feature, val) in enumerate(zip(features, df)):
         val[0] = feature
         df[index] = [unidecode(x) if type(x) is str else x for x in val]
-    datatypes = [['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT']]
+    datatypes = [['STRING', 'STRING', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT']]
     df = datatypes + df
     df = pd.DataFrame(df, columns=cols)
     # print(df)
@@ -634,7 +662,8 @@ def yte(filename='so_nhan_luc_y_te'):
             vals = [x if x != '..' else '0' for x in vals]
             for i in range(number_of_year):
                 results.append([unidecode(place), years[i] ,vals[i + 1 + 3 * 0], vals[i + 1 + 3 * 1], vals[i + 1 + 3 * 2], vals[i + 1 + 3 * 3]])
-        columns = ['1', '2'] + list(set(rows))
+        columns = ['Cap quan ly', 'Nam'] + list(set(rows))
+        columns = [unidecode(x) for x in columns]
         df = pd.DataFrame(results, columns=columns)
         print(df) 
         
@@ -713,12 +742,12 @@ if __name__ == '__main__':
     # doanhnghiep(filename='Tổng số lao động trong các doanh nghiệp đang hoạt động có kết quả sản xuất kinh doanh tại thời điểm 3112 hàng năm phân theo loại hình doanh')
     # hoptacxa(filename='Số hợp tác xã phân theo địa phương')
     # hoptacxa(filename='Số lao động trong hợp tác xã phân theo địa phương')
-    # vantai(filename='Số lượt hành khách luân chuyển phân theo ngành vận tải')
-    # vantai(filename='Số lượt hành khách vận chuyển phân theo ngành vận tải')
+    vantai(filename='Số lượt hành khách luân chuyển phân theo ngành vận tải')
+    vantai(filename='Số lượt hành khách vận chuyển phân theo ngành vận tải')
     # buuchinh(filename='Doanh thu bưu chính, chuyển phát và viễn thông')
     # moitruong(filename='Thiệt hại do thiên tai')
     # moitruong1(filename='Xử lý chất thải rắn và nước thải của các khu công nghiệp')
-    yte(filename='so_co_so_kham_chua_benh_co_so_cap_quan_ly')
+    # yte(filename='so_co_so_kham_chua_benh_co_so_cap_quan_ly')
     # mucsongdancu(filename='Chi tiêu bình quân đầu người một tháng theo giá hiện hành theo khoản chi, theo thành thị, nông thôn và theo vùng')
     # mucsongdancu(filename='Thu nhập bình quân đầu người một tháng theo giá hiện hành theo nguồn thu, theo thành thị, nông thôn, theo vùng')
 

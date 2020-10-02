@@ -1,24 +1,24 @@
-1	2	2017	2018	So bo 2019
+Gia tri/Chi so phat trien	Nam	2017	2018	So bo 2019
 STRING	STRING	FLOAT	FLOAT	FLOAT
-San luong (Nghin tan)	Cay an qua:	..	..	..
+San luong (Nghin tan)	Cay an qua:	0	0	0
 San luong (Nghin tan)	Nho	26.3	25.2	26.1
 San luong (Nghin tan)	Xoai	745.5	791.8	839.0
 San luong (Nghin tan)	Cam, quyt	957.9	1075.0	1230.1
 San luong (Nghin tan)	Nhan	499.3	543.7	527.0
 San luong (Nghin tan)	Vai, chom chom	562.9	731.8	622.0
-San luong (Nghin tan)	Cay cong nghiep lau nam:	..	..	..
+San luong (Nghin tan)	Cay cong nghiep lau nam:	0	0	0
 San luong (Nghin tan)	Dieu	215.8	266.4	284.0
 San luong (Nghin tan)	Cao su (Mu kho)	1094.5	1137.7	1167.3
 San luong (Nghin tan)	Ca phe (Nhan)	1577.2	1616.3	1678.8
 San luong (Nghin tan)	che (Bup tuoi)	972.0	994.2	1018.4
 San luong (Nghin tan)	Ho tieu	252.6	262.7	262.2
-Chi so phat trien (Nam truoc =100) - %	Cay an qua:	..	..	..
+Chi so phat trien (Nam truoc =100) - %	Cay an qua:	0	0	0
 Chi so phat trien (Nam truoc =100) - %	Nho	98.1	95.8	103.6
 Chi so phat trien (Nam truoc =100) - %	Xoai	102.4	106.2	106.0
 Chi so phat trien (Nam truoc =100) - %	Cam, quyt	118.7	112.2	114.4
 Chi so phat trien (Nam truoc =100) - %	Nhan	99.3	108.9	96.9
 Chi so phat trien (Nam truoc =100) - %	Vai, chom chom	86.8	130.0	85.0
-Chi so phat trien (Nam truoc =100) - %	Cay cong nghiep lau nam:	..	..	..
+Chi so phat trien (Nam truoc =100) - %	Cay cong nghiep lau nam:	0	0	0
 Chi so phat trien (Nam truoc =100) - %	Dieu	70.7	123.4	106.6
 Chi so phat trien (Nam truoc =100) - %	Cao su (Mu kho)	105.7	103.9	102.6
 Chi so phat trien (Nam truoc =100) - %	Ca phe (Nhan)	108.0	102.5	103.9

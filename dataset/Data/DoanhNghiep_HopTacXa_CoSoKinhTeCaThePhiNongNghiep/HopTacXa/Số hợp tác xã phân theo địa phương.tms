@@ -1,0 +1,191 @@
+false
+S? h?p tác xã phân theo ??a ph??ng.tm3
+TREEMAP VERSION	Treemap 4.1
+FLIP_SLICE_AND_DICE	false
+PARTITIONING_METHOD	1
+NOMINAL_ATTRIBUTE	1
+3	70
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+LABEL_ATTRIBUTE_INDEX	0
+SIZE_ATTRIBUTE_NUMERIC_INDEX	-1
+COLOR_ATTRIBUTE_INDEX	0
+AUTOHIDE	false
+VISIBLE_POPUP	true
+DIRECTORY_MAPPING_DATA	false
+FONT_SIZE	20
+BORDER_SIZE	3
+ALL_NOMINAL_STRINGS_TO_COLORS	1
+0
+70
+Thanh Hoa	61	255	51	0
+Son La	55	255	102	51
+Phu Tho	47	153	0	153
+Hoa Binh	33	159	32	32
+Binh Thuan	11	127	127	0
+Khanh Hoa	35	159	159	32
+Lai Chau	38	64	191	191
+Dak Nong	18	254	0	254
+Hung Yen	34	159	32	159
+Quang Ngai	51	0	153	153
+Nghe An	44	102	255	102
+Da Nang	16	254	0	0
+Dien Bien	19	254	127	0
+Tay Nguyen	57	204	0	204
+Binh Dinh	8	127	0	0
+Tra Vinh	64	255	153	153
+Tien Giang	63	153	153	255
+Ben Tre	7	0	254	254
+An Giang	0	0	0	127
+Ca Mau	13	127	254	0
+Tay Ninh	58	51	204	255
+Gia Lai	25	96	223	96
+Soc Trang	54	255	51	255
+Ha Noi	28	223	96	223
+Vinh Long	67	102	102	0
+Binh Duong	9	127	0	127
+Can Tho	14	127	254	127
+Kon Tum	37	64	191	64
+Kien Giang	36	64	64	191
+Lao Cai	41	191	191	64
+Dak Lak	17	254	0	127
+Hau Giang	32	32	159	159
+Dong Nai	20	254	127	127
+Thai Binh	59	102	102	0
+Phu Yen	48	255	204	51
+Long An	42	102	102	255
+Dong bang song Hong	24	96	96	223
+Bac Lieu	4	0	127	254
+Ba Ria - Vung Tau	1	0	0	254
+Ninh Binh	45	51	255	204
+Quang Tri	53	204	255	51
+Nam Dinh	43	204	255	102
+Bac Ninh	5	0	254	0
+Hai Duong	30	32	32	159
+Vinh Phuc	68	204	255	51
+CA NUOC	12	127	127	254
+TP.Ho Chi Minh	56	51	51	0
+Bac Trung Bo va Duyen hai mien Trung	6	0	254	127
+Ninh Thuan	46	255	102	102
+Dong bang song Cuu Long	23	254	254	127
+Trung du va mien nui phia Bac	65	204	204	0
+Bac Kan	3	0	127	127
+Lam Dong	39	191	64	64
+Quang Ninh	52	204	51	255
+Quang Nam	50	102	51	0
+Dong Nam Bo	21	254	127	254
+Binh Phuoc	10	127	0	254
+Ha Tinh	29	223	223	96
+Ha Giang	26	96	223	223
+Quang Binh	49	153	153	255
+Tuyen Quang	66	0	153	102
+Thai Nguyen	60	102	0	0
+Cao Bang	15	127	254	254
+Lang Son	40	191	64	191
+Bac Giang	2	0	127	0
+Ha Nam	27	223	96	96
+Dong Thap	22	254	254	0
+Thua Thien Hue	62	153	255	255
+Yen Bai	69	255	153	153
+Hai Phong	31	32	159	32
+COLOR_BINNING_PROPERTIES
+0	23.00	12866.00	1	0	0	0	0	255	0
+0	29.00	13012.00	1	0	0	0	0	255	0
+0	34.00	13171.00	1	0	0	0	0	255	0
+HIERARCHY_HISTORY
+1
+Hierarchy: 1	1
+-1	
+0
+-1	-1
+BINNING_PROPERTIES
+0	23.00	12866.00	1
+0	29.00	13012.00	1
+0	34.00	13171.00	1
+USER_MAXIMUM_DEPTH	1
+HIDE_LEAF_LABEL	true
+NUMERICAL_ATTRIBUTE_USER_MINIMA	3
+false	22
+false	28
+false	33
+NUMERICAL_ATTRIBUTE_USER_MAXIMA	3
+false	12867
+false	13013
+false	13172
+AGGREGATE_FUNCTION	3
+1	1
+2	1
+3	1
+HIGHLIGHTED_NODE	0
+TREEMAP_TITLE	S? h?p tác xã phân theo ??a ph??ng.tm3
+NO_BORDER	true
+USER_ROOT	-1
+END_SETTINGS

@@ -1,16 +1,16 @@
-1	2	2016	2017	2018
+1	Nam	2016	2017	2018
 STRING	STRING	FLOAT	FLOAT	FLOAT
 San luong (Nghin m3)	TONG SO	12633.2	14181.8	15248.0
 San luong (Nghin m3)	Kinh te Nha nuoc	1915.4	1968.4	1744.6
 San luong (Nghin m3)	Kinh te Ngoai Nha nuoc:	10626.6	12025.2	13397.2
- 	    Tap the	19.0	24.9	33.5
- 	    Ca the	10387.6	11631.4	12952.7
- 	    Tu nhan	220.0	368.9	411.0
-Chi so phat trien (Nam truoc = 100) - %	Khu vuc co von dau tu nuoc ngoai	91.2	188.2	106.2
+San luong (Nghin m3)	    Tap the	19.0	24.9	33.5
+San luong (Nghin m3)	    Ca the	10387.6	11631.4	12952.7
+San luong (Nghin m3)	    Tu nhan	220.0	368.9	411.0
+San luong (Nghin m3)	Khu vuc co von dau tu nuoc ngoai	91.2	188.2	106.2
 Chi so phat trien (Nam truoc = 100) - %	TONG SO	111.8	112.3	107.5
 Chi so phat trien (Nam truoc = 100) - %	Kinh te Nha nuoc	96.7	102.8	88.6
- 	Kinh te Ngoai Nha nuoc:	115.1	113.2	111.4
- 	    Tap the	91.3	131.1	134.5
- 	    Ca the	115.5	112.0	111.4
-(*) So lieu tu nam 2010-2016 dieu chinh theo so lieu dieu tra 	    Tu nhan	101.4	167.7	111.4
-(*) So lieu tu nam 2010-2016 dieu chinh theo so lieu dieu tra 	Khu vuc co von dau tu nuoc ngoai	96.8	206.4	56.4
+Chi so phat trien (Nam truoc = 100) - %	Kinh te Ngoai Nha nuoc:	115.1	113.2	111.4
+Chi so phat trien (Nam truoc = 100) - %	    Tap the	91.3	131.1	134.5
+Chi so phat trien (Nam truoc = 100) - %	    Ca the	115.5	112.0	111.4
+Chi so phat trien (Nam truoc = 100) - %	    Tu nhan	101.4	167.7	111.4
+Chi so phat trien (Nam truoc = 100) - %	Khu vuc co von dau tu nuoc ngoai	96.8	206.4	56.4

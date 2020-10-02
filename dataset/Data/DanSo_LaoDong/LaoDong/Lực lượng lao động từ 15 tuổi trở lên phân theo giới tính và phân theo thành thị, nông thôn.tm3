@@ -1,5 +1,5 @@
-1	2	Tong so	Nam	Nu	Thanh thi	Nong thon
-STRING	STRING	FLOAT	FLOAT	FLOAT		
+Tong so/Co cau	Nam	Tong so	Nam	Nu	Thanh thi	Nong thon
+STRING	STRING	FLOAT	FLOAT	FLOAT	FLOAT	FLOAT
 Tong so (Nghin nguoi)	2017	54819.6	28513.6	26306.0	17416.1	37403.5
 Tong so (Nghin nguoi)	2018	55388.0	28911.4	26476.6	17864.2	37523.8
 Tong so (Nghin nguoi)	So bo 2019	55767.4	29370.6	26396.8	18094.5	37672.9

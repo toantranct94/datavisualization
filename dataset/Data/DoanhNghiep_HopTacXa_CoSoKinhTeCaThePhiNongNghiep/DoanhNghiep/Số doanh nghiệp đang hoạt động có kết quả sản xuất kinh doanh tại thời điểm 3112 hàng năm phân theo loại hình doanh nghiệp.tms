@@ -1,0 +1,84 @@
+false
+S? doanh nghi?p ?ang ho?t ??ng có k?t qu? s?n xu?t kinh doanh t?i th?i ?i?m 3112 hàng n?m phân theo lo?i hình doanh nghi?p.tm3
+TREEMAP VERSION	Treemap 4.1
+FLIP_SLICE_AND_DICE	false
+PARTITIONING_METHOD	1
+NOMINAL_ATTRIBUTE	2
+2	2
+true
+true
+3	13
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+LABEL_ATTRIBUTE_INDEX	1
+SIZE_ATTRIBUTE_NUMERIC_INDEX	-1
+COLOR_ATTRIBUTE_INDEX	1
+AUTOHIDE	false
+VISIBLE_POPUP	true
+DIRECTORY_MAPPING_DATA	false
+FONT_SIZE	20
+BORDER_SIZE	3
+ALL_NOMINAL_STRINGS_TO_COLORS	2
+0
+2
+Co cau (%)	0	0	0	127
+Doanh nghiep	1	0	0	254
+1
+13
+TONG SO	11	107	202	209
+Doanh nghiep Nha nuoc	8	234	67	53
+Tu nhan	12	127	127	254
+DN 100% von nha nuoc	4	151	113	2
+DN lien doanh voi nuoc ngoai	7	0	254	254
+Cong ty TNHH	0	255	138	52
+Cong ty co phan co von Nha nuoc	1	252	201	54
+Doanh nghiep ngoai Nha nuoc	10	102	255	153
+DN 100% von nuoc ngoai	5	52	168	83
+Cong ty co phan khong co von Nha nuoc	2	102	102	255
+DN hon 50% von nha nuoc	6	0	255	102
+Doanh nghiep co von dau tu nuoc ngoai	9	255	255	128
+Cong ty hop danh	3	255	153	153
+COLOR_BINNING_PROPERTIES
+0	0.13	442485.00	1	0	0	0	0	255	0
+0	0.17	505059.00	1	0	0	0	0	255	0
+0	0.13	560417.00	1	0	0	0	0	255	0
+HIERARCHY_HISTORY
+1
+Hierarchy: 1	1
+-1	
+0
+-1	-1
+BINNING_PROPERTIES
+0	0.13	442485.00	1
+0	0.17	505059.00	1
+0	0.13	560417.00	1
+USER_MAXIMUM_DEPTH	1
+HIDE_LEAF_LABEL	true
+NUMERICAL_ATTRIBUTE_USER_MINIMA	3
+false	-1
+false	-1
+false	-1
+NUMERICAL_ATTRIBUTE_USER_MAXIMA	3
+false	442486
+false	505060
+false	560418
+AGGREGATE_FUNCTION	3
+2	1
+3	1
+4	1
+HIGHLIGHTED_NODE	19
+TREEMAP_TITLE	S? doanh nghi?p ?ang ho?t ??ng có k?t qu? s?n xu?t kinh doanh t?i th?i ?i?m 3112 hàng n?m phân theo lo?i hình doanh nghi?p.tm3
+NO_BORDER	true
+USER_ROOT	-1
+END_SETTINGS

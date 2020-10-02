@@ -1,0 +1,200 @@
+false
+Di?n tÌch, d‚n s? v‡ m?t ?? d‚n s? ph‚n theo ??a ph??ng.tm3
+TREEMAP VERSION	Treemap 4.1
+FLIP_SLICE_AND_DICE	false
+PARTITIONING_METHOD	1
+NOMINAL_ATTRIBUTE	2
+3	70
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+1	3
+true
+true
+true
+LABEL_ATTRIBUTE_INDEX	-2
+SIZE_ATTRIBUTE_NUMERIC_INDEX	-1
+COLOR_ATTRIBUTE_INDEX	0
+AUTOHIDE	false
+VISIBLE_POPUP	true
+DIRECTORY_MAPPING_DATA	false
+FONT_SIZE	20
+BORDER_SIZE	3
+ALL_NOMINAL_STRINGS_TO_COLORS	2
+0
+70
+Quang_Ngai	51	51	51	255
+Phu_Tho	47	255	102	204
+Trung_du_va_mien_nui_phia_Bac	65	153	204	255
+Thai_Nguyen	60	255	153	153
+Hau_Giang	32	32	159	159
+Da_Nang	16	254	0	0
+Dien_Bien	19	254	127	0
+Khanh_Hoa	35	159	159	32
+Binh_Dinh	8	127	0	0
+Tra_Vinh	64	51	0	51
+Hung_Yen	34	159	32	159
+Tay_Ninh	58	51	51	255
+Hai_Duong	30	32	32	159
+Vinh_Long	67	255	51	0
+Ninh_Thuan	46	153	204	0
+Ben_Tre	7	0	254	254
+Ca_Mau	13	127	254	0
+TP.Ho_Chi_Minh	56	102	102	255
+Gia_Lai	25	96	223	96
+Ha_Noi	28	223	96	223
+Long_An	42	102	102	255
+Can_Tho	14	127	254	127
+Thai_Binh	59	51	255	51
+Kon_Tum	37	64	191	64
+Ba_Ria_-_Vung_Tau	1	0	0	254
+Binh_Phuoc	10	127	0	254
+Ninh_Binh	45	255	204	204
+Lao_Cai	41	191	191	64
+Nam_Dinh	43	255	204	153
+Ha_Giang	26	96	223	223
+Bac_Lieu	4	0	127	254
+Dak_Lak	17	254	0	127
+Vinh_Phuc	68	51	51	255
+Tuyen_Quang	66	153	255	51
+Dong_Nai	20	254	127	127
+Bac_Ninh	5	0	254	0
+CA_NUOC	12	127	127	254
+Phu_Yen	48	204	0	255
+Tay_Nguyen	57	255	204	204
+Bac_Giang	2	0	127	0
+Quang_Tri	53	0	102	102
+Hai_Phong	31	32	159	32
+Lam_Dong	39	191	64	64
+Quang_Ninh	52	51	51	51
+Bac_Trung_Bo_va_Duyen_hai_mien_Trung	6	0	254	127
+Ha_Tinh	29	223	223	96
+Dong_bang_song_Cuu_Long	23	254	254	127
+Quang_Binh	49	0	102	0
+Bac_Kan	3	0	127	127
+Cao_Bang	15	127	254	254
+Quang_Nam	50	102	255	102
+Dong_Nam_Bo	21	254	127	254
+Binh_Thuan	11	127	127	0
+Dong_Thap	22	254	254	0
+Lang_Son	40	191	64	191
+Ha_Nam	27	223	96	96
+Son_La	55	153	255	0
+Tien_Giang	63	0	102	102
+Yen_Bai	69	51	255	51
+An_Giang	0	0	0	127
+Thanh_Hoa	61	0	102	51
+Thua_Thien_Hue	62	51	51	255
+Hoa_Binh	33	159	32	32
+Soc_Trang	54	153	255	255
+Dong_bang_song_Hong	24	96	96	223
+Binh_Duong	9	127	0	127
+Lai_Chau	38	64	191	191
+Dak_Nong	18	254	0	254
+Nghe_An	44	255	153	153
+Kien_Giang	36	64	64	191
+1
+3
+D√¢n s·ªë trung b√¨nh (Ngh√¨n ng∆∞·ª?i)	1	0	0	254
+M·∫≠t ƒë·ªô d√¢n s·ªë (Ng∆∞·ª?i/km2)	2	0	127	0
+Di·ªán t√≠ch(Km2)	0	0	0	127
+COLOR_BINNING_PROPERTIES
+0	49.00	331230.812	1	0	0	0	0	255	0
+0	50.00	331235.688	1	0	0	0	0	255	0
+0	51.00	331236.00	1	0	0	0	0	255	0
+HIERARCHY_HISTORY
+1
+Hierarchy: 1	1
+-1	
+0
+-1	-1
+BINNING_PROPERTIES
+0	49.00	331230.812	1
+0	50.00	331235.688	1
+0	51.00	331236.00	1
+USER_MAXIMUM_DEPTH	1
+HIDE_LEAF_LABEL	true
+NUMERICAL_ATTRIBUTE_USER_MINIMA	3
+false	48
+false	49
+false	50
+NUMERICAL_ATTRIBUTE_USER_MAXIMA	3
+false	331231
+false	331236
+false	331237
+AGGREGATE_FUNCTION	3
+2	1
+3	1
+4	1
+HIGHLIGHTED_NODE	0
+TREEMAP_TITLE	Di?n tÌch, d‚n s? v‡ m?t ?? d‚n s? ph‚n theo ??a ph??ng.tm3
+NO_BORDER	true
+USER_ROOT	-1
+END_SETTINGS

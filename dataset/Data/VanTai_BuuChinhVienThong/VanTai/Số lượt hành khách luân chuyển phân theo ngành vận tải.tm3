@@ -1,5 +1,5 @@
-1	2	Tong so	Duong sat	Duong bo	Duong song	Duong hang khong
-STRING	STRING	FLOAT	FLOAT	FLOAT		
+1	Nam	Tong so	Duong sat	Duong bo	Duong song	Duong hang khong
+STRING	STRING	FLOAT	FLOAT	FLOAT	FLOAT	FLOAT
 Luot hanh khach (Trieu luot nguoi.km)	2017	186834.4	3625.1	125390.3	3504.6	54314.4
 Luot hanh khach (Trieu luot nguoi.km)	2018	206672.7	3542.1	130774.7	4499.9	67856.0
 Luot hanh khach (Trieu luot nguoi.km)	So bo 2019	230779.9	3170.5	145612.6	4812.9	77183.9
