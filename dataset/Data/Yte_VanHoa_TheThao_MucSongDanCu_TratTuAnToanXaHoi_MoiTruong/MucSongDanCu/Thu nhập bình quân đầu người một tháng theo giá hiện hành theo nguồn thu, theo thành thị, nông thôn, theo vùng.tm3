@@ -1,4 +1,4 @@
-1	Các khoản thu khác	Tổng số	Thu từ tiền lương, tiền công	Thu từ nông, lâm nghiệp, thủy sản	Thu phi nông, lâm nghiệp, thủy sản
+1	Cac khoan thu khac	Tong so	Thu phi nong, lam nghiep, thuy san	Thu tu tien luong, tien cong	Thu tu nong, lam nghiep, thuy san
 STRING	STRING	FLOAT	FLOAT	FLOAT	FLOAT
 CA NUOC	2016	3098	748	1981	497
 CA NUOC	2018	1487	353	516	4295

@@ -1,26 +1,26 @@
-1	2	Sở y tế quản lý	Bộ Y tế quản lý	Các ngành khác quản lý	Tổng số
-STRING	INTERGER	FLOAT	FLOAT	FLOAT	FLOAT
-TỔNG SỐ	2015	13617	780	12779	48
-TỔNG SỐ	2016	46	13591	766	12769
-TỔNG SỐ	2017	12791	46	13583	766
-Bệnh viện	2015	1071	26	1012	48
-Bệnh viện	2016	43	1077	22	1015
-Bệnh viện	2017	1002	43	1085	22
-Bệnh viện điều dưỡng và phục hồi chức năng	2015	61	27	35	0
-Bệnh viện điều dưỡng và phục hồi chức năng	2016	0	62	27	33
-Bệnh viện điều dưỡng và phục hồi chức năng	2017	34	0	60	27
-Bệnh viện da liễu	2015	21	0	19	0
-Bệnh viện da liễu	2016	3	22	0	20
-Bệnh viện da liễu	2017	18	3	20	0
-Nhà hộ sinh	2015	11	0	9	0
-Nhà hộ sinh	2016	0	9	0	9
-Nhà hộ sinh	2017	11	0	9	0
-Phòng khám đa khoa khu vực	2015	630	17	602	0
-Phòng khám đa khoa khu vực	2016	0	609	7	572
-Phòng khám đa khoa khu vực	2017	613	0	579	7
-Trạm y tế xã, phường, cơ quan, xí nghiệp	2015	11823	710	11102	0
-Trạm y tế xã, phường, cơ quan, xí nghiệp	2016	0	11812	710	11120
-Trạm y tế xã, phường, cơ quan, xí nghiệp	2017	11113	0	11830	710
-Trạm y tế của cơ quan, xí nghiệp	2015	710	710	0	0
-Trạm y tế của cơ quan, xí nghiệp	2016	0	710	710	0
-Trạm y tế của cơ quan, xí nghiệp	2017	0	0	710	710
+1	2	Các ngành khác quản lý	Tổng số	Sở y tế quản lý	Bộ Y tế quản lý
+STRING	INTEGER	FLOAT	FLOAT	FLOAT	FLOAT
+TONG SO	2015	13617	780	12779	48
+TONG SO	2016	46	13591	766	12769
+TONG SO	2017	12791	46	13583	766
+Benh vien	2015	1071	26	1012	48
+Benh vien	2016	43	1077	22	1015
+Benh vien	2017	1002	43	1085	22
+Benh vien dieu duong va phuc hoi chuc nang	2015	61	27	35	0
+Benh vien dieu duong va phuc hoi chuc nang	2016	0	62	27	33
+Benh vien dieu duong va phuc hoi chuc nang	2017	34	0	60	27
+Benh vien da lieu	2015	21	0	19	0
+Benh vien da lieu	2016	3	22	0	20
+Benh vien da lieu	2017	18	3	20	0
+Nha ho sinh	2015	11	0	9	0
+Nha ho sinh	2016	0	9	0	9
+Nha ho sinh	2017	11	0	9	0
+Phong kham da khoa khu vuc	2015	630	17	602	0
+Phong kham da khoa khu vuc	2016	0	609	7	572
+Phong kham da khoa khu vuc	2017	613	0	579	7
+Tram y te xa, phuong, co quan, xi nghiep	2015	11823	710	11102	0
+Tram y te xa, phuong, co quan, xi nghiep	2016	0	11812	710	11120
+Tram y te xa, phuong, co quan, xi nghiep	2017	11113	0	11830	710
+Tram y te cua co quan, xi nghiep	2015	710	710	0	0
+Tram y te cua co quan, xi nghiep	2016	0	710	710	0
+Tram y te cua co quan, xi nghiep	2017	0	0	710	710

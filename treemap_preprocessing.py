@@ -450,7 +450,7 @@ def moitruong1(filename='Xử lý chất thải rắn và nước thải của c
     cols = df.columns.tolist()[1:]
     number_of_feature = len(cols)
     results = []
-    datatypes = ['STRING', 'STRING', 'INTERGER', 'FLOAT', 'FLOAT', 'FLOAT']
+    datatypes = ['STRING', 'STRING', 'INTEGER', 'FLOAT', 'FLOAT', 'FLOAT']
     results.append(datatypes)
     for index, place in enumerate(places):
         vals = df.iloc[index,:].values
@@ -627,13 +627,13 @@ def yte(filename='so_nhan_luc_y_te'):
         cols = df.columns.tolist()[1:]
         number_of_feature = len(cols)
         results = []
-        datatypes = ['STRING', 'INTERGER', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT']
+        datatypes = ['STRING', 'INTEGER', 'FLOAT', 'FLOAT', 'FLOAT', 'FLOAT']
         results.append(datatypes)
         for index, place in enumerate(places):
             vals = df.iloc[index + 1,:].values
             vals = [x if x != '..' else '0' for x in vals]
             for i in range(number_of_year):
-                results.append([place, years[i] ,vals[i + 1 + 3 * 0], vals[i + 1 + 3 * 1], vals[i + 1 + 3 * 2], vals[i + 1 + 3 * 3]])
+                results.append([unidecode(place), years[i] ,vals[i + 1 + 3 * 0], vals[i + 1 + 3 * 1], vals[i + 1 + 3 * 2], vals[i + 1 + 3 * 3]])
         columns = ['1', '2'] + list(set(rows))
         df = pd.DataFrame(results, columns=columns)
         print(df) 
@@ -683,6 +683,7 @@ def mucsongdancu(filename='Chi tiêu bình quân đầu người một tháng th
         for i in range(number_of_year):
             results.append([unidecode(place), unidecode(years[i]) ,vals[i + 1 + 3 * 0], vals[i + 1 + 3 * 1], vals[i + 1 + 3 * 2], vals[i + 1 + 3 * 3]])
     columns = ['1'] + list(set(rows))
+    columns = [unidecode(x) for x in columns]
     df = pd.DataFrame(results, columns=columns)
     print(df) 
     df.to_csv(os.path.join(os.getcwd(), 'dataset', 'Data', 'Yte_VanHoa_TheThao_MucSongDanCu_TratTuAnToanXaHoi_MoiTruong', 'MucSongDanCu', '{}.tm3'.format(filename)), sep='\t', index=False)
@@ -717,9 +718,9 @@ if __name__ == '__main__':
     # buuchinh(filename='Doanh thu bưu chính, chuyển phát và viễn thông')
     # moitruong(filename='Thiệt hại do thiên tai')
     # moitruong1(filename='Xử lý chất thải rắn và nước thải của các khu công nghiệp')
-    # yte(filename='so_co_so_kham_chua_benh_co_so_cap_quan_ly')
-    mucsongdancu(filename='Chi tiêu bình quân đầu người một tháng theo giá hiện hành theo khoản chi, theo thành thị, nông thôn và theo vùng')
-    mucsongdancu(filename='Thu nhập bình quân đầu người một tháng theo giá hiện hành theo nguồn thu, theo thành thị, nông thôn, theo vùng')
+    yte(filename='so_co_so_kham_chua_benh_co_so_cap_quan_ly')
+    # mucsongdancu(filename='Chi tiêu bình quân đầu người một tháng theo giá hiện hành theo khoản chi, theo thành thị, nông thôn và theo vùng')
+    # mucsongdancu(filename='Thu nhập bình quân đầu người một tháng theo giá hiện hành theo nguồn thu, theo thành thị, nông thôn, theo vùng')
 
     pass
     
