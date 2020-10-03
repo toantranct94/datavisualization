@@ -82,7 +82,7 @@ def iris_dataset(histogram=False, boxplot=True, pie=False, scatter2d=False, matr
         # plt.show()
         class_name = [x.replace('-', ' ').title() for x in class_name]
         plt.gca().axis("equal")
-        pie = plt.pie(df_class, startangle=0, autopct='%1.0f%%', colors=colors)
+        pie = plt.pie(df_class, startangle=0, autopct='%1.2f%%', colors=colors)
         # plt.title('Pie Chart Demonstration for Iris dataset', weight='bold', size=14)
         plt.legend(pie[0],class_name, bbox_to_anchor=(1,0.5), loc="center right", fontsize=10, 
                 bbox_transform=plt.gcf().transFigure)
@@ -101,7 +101,7 @@ def iris_dataset(histogram=False, boxplot=True, pie=False, scatter2d=False, matr
         # formatter = plt.FuncFormatter(lambda i, *args: iris.target_names[int(i)])
         while i <= 2:
             for index, (n, grp) in enumerate(df.groupby("class")):
-                plt.scatter(grp.petal_length, grp.petal_width, label=n.replace('-', ' ').title(), c=colors[index])
+                plt.scatter(grp[iris_features[i]], grp[iris_features[i + 1]], label=n.replace('-', ' ').title(), c=colors[index])
             plt.xlabel(iris_features[i].replace('_', ' ').title())
             plt.ylabel(iris_features[i + 1].replace('_', ' ').title())
             plt.legend()
@@ -124,7 +124,6 @@ def iris_dataset(histogram=False, boxplot=True, pie=False, scatter2d=False, matr
         sns.pairplot(df1, hue="class", corner=True)
         plt.show()
     
-
     if parallel:
         colors_plt = ["rgb{}".format(hex_to_rgb(x)) for x in colors[:len(class_name)]]
         # print(colors_plt)
@@ -163,6 +162,8 @@ def segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, 
 
     # Calculate colleration
     corr = df.corr(method='pearson')  # pearson kendall spearman
+
+    # print(corr['class'])
 
     # mask = np.zeros_like(corr, dtype=np.bool)
     # mask[np.triu_indices_from(mask)] = True
@@ -249,7 +250,7 @@ def segment_dataset(histogram=False, boxplot=False, pie=False, scatter2d=False, 
         df_class = df['class'].map({1:'Brickface', 2:'Sky', 3:'Grey soil', 4:'Foliage', 5:'Window', 6:'Path', 7:'Grass'})
         df_class = df_class.value_counts()
         plt.gca().axis("equal")
-        pie = plt.pie(df_class, startangle=0, autopct='%1.0f%%', colors=colors)
+        pie = plt.pie(df_class, startangle=0, autopct='%1.2f%%', colors=colors)
         # plt.title('Pie Chart Demonstration for Iris dataset', weight='bold', size=14)
         plt.legend(pie[0], class_name_label, bbox_to_anchor=(1, 0.5), loc="center right", fontsize=10,
                    bbox_transform=plt.gcf().transFigure)
@@ -369,7 +370,7 @@ def satimage_dataset(training_set=True,histogram=False, boxplot=False, pie=False
         class_name = ['Red Soil', 'Cotton Crop', 'Grey Soil', 'Damp Grey Soil', 'Soil with Vegetation Stubble', 'Very Damp Grey Soil']
         df_class = df_class.value_counts()
         plt.gca().axis("equal")
-        pie = plt.pie(df_class, startangle=0, autopct='%1.0f%%', colors=colors)
+        pie = plt.pie(df_class, startangle=0, autopct='%1.2f%%', colors=colors)
         # plt.title('Pie Chart Demonstration for Iris dataset', weight='bold', size=14)
         plt.legend(pie[0], class_name, bbox_to_anchor=(1,0.5), loc="center right", fontsize=10,
                 bbox_transform=plt.gcf().transFigure)
@@ -415,8 +416,8 @@ def satimage_dataset(training_set=True,histogram=False, boxplot=False, pie=False
 
 
 if __name__ == "__main__":
-    # iris_dataset(histogram=True, boxplot=True, pie=True, scatter2d=True, matrix=True, parallel=True)
-    # segment_dataset(histogram=True, boxplot=True, pie=True, scatter2d=True, matrix=True, parallel=True)
+    # iris_dataset(histogram=False, boxplot=False, pie=False, scatter2d=True, matrix=True, parallel=True)
+    segment_dataset(histogram=False, boxplot=False, pie=True, scatter2d=False, matrix=False, parallel=False)
     # satimage_dataset(training_set=True, histogram=True, boxplot=True, pie=True, scatter2d=True, matrix=True, parallel=True)
-    satimage_dataset(training_set=False,histogram=True, boxplot=True, pie=True, scatter2d=True, matrix=True, parallel=True)
+    # satimage_dataset(training_set=False,histogram=True, boxplot=True, pie=True, scatter2d=True, matrix=True, parallel=True)
 

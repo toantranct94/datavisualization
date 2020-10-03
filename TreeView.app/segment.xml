@@ -1,0 +1,118 @@
+<XML>
+  <node_1 op="A11 &lt;= 26.1111" >
+    <node_2 op="A19 &gt; 0" class="7" items="327" />
+    <node_3 op="A19 &lt;= 0" >
+      <node_4 op="A19 &lt;= -1.89048" >
+        <node_5 op="A19 &lt;= -2.24632" class="3" items="161" errors="2" />
+        <node_6 op="A19 &gt; -2.24632" >
+          <node_7 op="A11 &lt;= 2.77778" >
+            <node_8 op="A19 &lt;= -2.09121" >
+              <node_9 op="A2 &lt;= 129" class="3" items="89" />
+              <node_10 op="A2 &gt; 129" >
+                <node_11 op="A1 &lt;= 128" >
+                  <node_12 op="A11 &gt; 0.666667" class="5" items="6" />
+                  <node_13 op="A11 &lt;= 0.666667" >
+                    <node_14 op="A13 &gt; 0" class="3" items="19" />
+                    <node_15 op="A13 &lt;= 0" >
+                      <node_16 op="A1 &gt; 85" class="3" items="10" />
+                      <node_17 op="A1 &lt;= 85" >
+                        <node_18 op="A10 &gt; 0.62963" class="5" items="5" />
+                        <node_19 op="A10 &lt;= 0.62963" >
+                          <node_20 op="A2 &gt; 139" class="5" items="4" errors="1" />
+                          <node_21 op="A2 &lt;= 139" >
+                            <node_22 op="A8 &lt;= 0.0555556" class="5" items="3" errors="1" />
+                            <node_23 op="A8 &gt; 0.0555556" class="3" items="6" />
+                          </node_21>
+                        </node_19>
+                      </node_17>
+                    </node_15>
+                  </node_13>
+                </node_11>
+                <node_24 op="A1 &gt; 128" >
+                  <node_25 op="A19 &lt;= -2.12934" class="3" items="3" errors="1" />
+                  <node_26 op="A19 &gt; -2.12934" class="5" items="24" errors="1" />
+                </node_24>
+              </node_10>
+            </node_8>
+            <node_27 op="A19 &gt; -2.09121" >
+              <node_28 op="A1 &lt;= 12" class="3" items="3" errors="1" />
+              <node_29 op="A1 &gt; 12" class="5" items="52" />
+            </node_27>
+          </node_7>
+          <node_30 op="A11 &gt; 2.77778" >
+            <node_31 op="A2 &lt;= 119" >
+              <node_32 op="A12 &lt;= 36" class="5" items="138" errors="2" />
+              <node_33 op="A12 &gt; 36" >
+                <node_34 op="A19 &lt;= -2.13621" class="5" items="10" />
+                <node_35 op="A19 &gt; -2.13621" class="4" items="9" errors="2" />
+              </node_33>
+            </node_31>
+            <node_36 op="A2 &gt; 119" >
+              <node_37 op="A18 &lt;= 0.559546" >
+                <node_38 op="A9 &lt;= 33.4222" >
+                  <node_39 op="A19 &lt;= -2.17742" >
+                    <node_40 op="A2 &lt;= 141" class="5" items="4" />
+                    <node_41 op="A2 &gt; 141" class="4" items="8" errors="1" />
+                  </node_39>
+                  <node_42 op="A19 &gt; -2.17742" >
+                    <node_43 op="A8 &lt;= 3.44445" class="4" items="40" errors="1" />
+                    <node_44 op="A8 &gt; 3.44445" class="3" items="3" errors="1" />
+                  </node_42>
+                </node_38>
+                <node_45 op="A9 &gt; 33.4222" >
+                  <node_46 op="A2 &lt;= 172" class="5" items="5" />
+                  <node_47 op="A2 &gt; 172" class="6" items="4" />
+                </node_45>
+              </node_37>
+              <node_48 op="A18 &gt; 0.559546" >
+                <node_49 op="A2 &lt;= 130" class="3" items="7" />
+                <node_50 op="A2 &gt; 130" >
+                  <node_51 op="A19 &lt;= -2.03224" class="5" items="16" errors="1" />
+                  <node_52 op="A19 &gt; -2.03224" class="1" items="4" />
+                </node_50>
+              </node_48>
+            </node_36>
+          </node_30>
+        </node_6>
+      </node_4>
+      <node_53 op="A19 &gt; -1.89048" >
+        <node_54 op="A16 &lt;= -4.88889" >
+          <node_55 op="A2 &lt;= 151" >
+            <node_56 op="A14 &lt;= -5.77778" >
+              <node_57 op="A11 &lt;= 17.8889" class="3" items="5" />
+              <node_58 op="A11 &gt; 17.8889" class="1" items="21" />
+            </node_56>
+            <node_59 op="A14 &gt; -5.77778" >
+              <node_60 op="A16 &lt;= -7" class="1" items="278" />
+              <node_61 op="A16 &gt; -7" >
+                <node_62 op="A6 &lt;= 0.888891" class="1" items="26" />
+                <node_63 op="A6 &gt; 0.888891" class="5" items="4" errors="1" />
+              </node_61>
+            </node_59>
+          </node_55>
+          <node_64 op="A2 &gt; 151" >
+            <node_65 op="A1 &lt;= 157" class="5" items="3" errors="2" />
+            <node_66 op="A1 &gt; 157" class="4" items="3" />
+          </node_64>
+        </node_54>
+        <node_67 op="A16 &gt; -4.88889" >
+          <node_68 op="A1 &lt;= 115" class="3" items="8" errors="2" />
+          <node_69 op="A1 &gt; 115" class="5" items="58" />
+        </node_67>
+      </node_53>
+    </node_3>
+  </node_1>
+  <node_70 op="A11 &gt; 26.1111" >
+    <node_71 op="A12 &gt; 91.4444" class="2" items="330" />
+    <node_72 op="A12 &lt;= 91.4444" >
+      <node_73 op="A2 &gt; 158" class="6" items="325" />
+      <node_74 op="A2 &lt;= 158" >
+        <node_75 op="A19 &gt; -2.18724" class="4" items="269" />
+        <node_76 op="A19 &lt;= -2.18724" >
+          <node_77 op="A12 &lt;= 50.1111" class="5" items="3" errors="1" />
+          <node_78 op="A12 &gt; 50.1111" class="3" items="17" />
+        </node_76>
+      </node_74>
+    </node_72>
+  </node_70>
+</XML>

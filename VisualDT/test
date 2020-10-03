@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<DecisionTree>
+    <DataSet Attributes="4" Classes="3">
+        <Attributes>
+            <Attribute>
+                <Name>A1</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A2</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A3</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A4</Name>
+                <Type>REAL</Type>
+            </Attribute>
+        </Attributes>
+        <Classes>
+            <Class>0</Class>
+            <Class>1</Class>
+            <Class>2</Class>
+        </Classes>
+    </DataSet>
+    <DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="6.74*A2 - 11.04*A3 + 10 = 0" InputData="A2;A3;0.6736678512333721;-1.1038429113621504;1.0">
+        <DecisionNode Classifier="null" Description="Pos part" InputData="N/A"/>
+        <DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Neg part  =&gt; 3.31*A2 - 23.44*A3 + 100 = 0" InputData="A2;A3;0.033099250277424;-0.23443377817904262;1.0">
+            <DecisionNode Classifier="null" Description="Pos part" InputData="N/A"/>
+            <DecisionNode Classifier="null" Description="Neg part " InputData="N/A"/>
+        </DecisionNode>
+    </DecisionNode>
+</DecisionTree>

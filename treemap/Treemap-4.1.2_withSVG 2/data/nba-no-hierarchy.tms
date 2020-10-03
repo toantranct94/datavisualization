@@ -1,0 +1,1062 @@
+false
+nba-no-hierarchy.tm3
+TREEMAP VERSION	Treemap 4.0
+FLIP_SLICE_AND_DICE	false
+PARTITIONING_METHOD	0
+NOMINAL_ATTRIBUTE	4
+3	355
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+2	2
+true
+true
+1	4
+true
+true
+true
+true
+3	29
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+LABEL_ATTRIBUTE_INDEX	-2
+SIZE_ATTRIBUTE_NUMERIC_INDEX	4
+COLOR_ATTRIBUTE_INDEX	27
+AUTOHIDE	false
+VISIBLE_POPUP	true
+DIRECTORY_MAPPING_DATA	false
+FONT_SIZE	12
+BORDER_SIZE	3
+ALL_NOMINAL_STRINGS_TO_COLORS	4
+0
+355
+Ceballos	57	255	255	255
+Russell	293	255	255	255
+Oyedeji	250	255	255	255
+Stojakovic	314	255	255	255
+Ewing	102	255	255	255
+Glover	124	255	255	255
+Causwell	56	255	255	255
+Bagaric	15	127	254	254
+Ollie	244	255	255	255
+Lynch	183	255	255	255
+Jamison	159	255	255	255
+Hawkins	142	255	255	255
+Sprewell	306	255	255	255
+Jackson	156	255	255	255
+Pack	251	255	255	255
+Outlaw	247	255	255	255
+Crawford	69	255	255	255
+Howard	150	255	255	255
+Rogers	289	255	255	255
+Ketner	167	255	255	255
+Martin	196	255	255	255
+McIlvaine	207	255	255	255
+Garces	115	255	255	255
+Bowdler	33	159	32	32
+Crotty	71	255	255	255
+Elliott	98	255	255	255
+Edney	92	255	255	255
+McKie	210	255	255	255
+Goldwire	125	255	255	255
+Horry	147	255	255	255
+Keefe	163	255	255	255
+Nash	233	255	255	255
+Najera	232	255	255	255
+Grant	127	255	255	255
+Scott	299	255	255	255
+Mutombo	229	255	255	255
+Marshall	195	255	255	255
+Guyton	131	255	255	255
+Stewart	311	255	255	255
+Foster	109	255	255	255
+Maloney	191	255	255	255
+Divac	85	255	255	255
+Camby	49	255	255	255
+Stackhouse	307	255	255	255
+Cassell	54	255	255	255
+Walker	338	255	255	255
+Reid	282	255	255	255
+Wolkowyski	353	255	255	255
+Allen	4	0	127	254
+Padgett	252	255	255	255
+Willis	351	255	255	255
+Samake	295	255	255	255
+White	347	255	255	255
+Best	25	96	223	96
+Bradley	37	255	255	255
+Hart	140	255	255	255
+Herren	144	255	255	255
+Stepania	309	255	255	255
+Hudson	151	255	255	255
+Wallace	339	255	255	255
+O'Neal	240	255	255	255
+Malone	190	255	255	255
+Van Horn	333	255	255	255
+McGrady	206	255	255	255
+Trent	329	255	255	255
+Rose	291	255	255	255
+Montross	223	255	255	255
+Williamson	350	255	255	255
+Thomas	326	255	255	255
+Booth	32	32	159	159
+Dial	83	255	255	255
+Joseph	162	255	255	255
+Kidd	168	255	255	255
+Armstrong	9	127	0	127
+Brunson	41	255	255	255
+Funderburke	114	255	255	255
+Buckner	43	255	255	255
+Medvedenko	213	255	255	255
+Cheaney	58	255	255	255
+McKey	209	255	255	255
+Traylor	328	255	255	255
+Smith	303	255	255	255
+Wells	344	255	255	255
+Abdul-Rauf	0	0	0	127
+Williams	349	255	255	255
+Vanterpool	334	255	255	255
+Gill	123	255	255	255
+Billups	27	223	96	96
+Bibby	26	96	223	223
+Austin	13	127	254	0
+Mercer	214	255	255	255
+Bowman	35	159	159	32
+Richardson	284	255	255	255
+Doleac	86	255	255	255
+Madsen	186	255	255	255
+Harrington	138	255	255	255
+Spencer	305	255	255	255
+Clark	61	255	255	255
+Whitney	348	255	255	255
+Barry	19	254	127	0
+McClintock	202	255	255	255
+Ellison	100	255	255	255
+Colson	67	255	255	255
+Nailon	231	255	255	255
+Harris	139	255	255	255
+Elie	97	255	255	255
+Burrell	47	255	255	255
+Garner	116	255	255	255
+Cato	55	255	255	255
+Harpring	137	255	255	255
+McCloud	203	255	255	255
+House	148	255	255	255
+Longley	180	255	255	255
+Piatkowski	265	255	255	255
+Penberthy	259	255	255	255
+Lewis	177	255	255	255
+Olowokandi	245	255	255	255
+Redd	280	255	255	255
+Owens	249	255	255	255
+Marbury	193	255	255	255
+Anthony	8	127	0	0
+Stith	312	255	255	255
+Douglas	88	255	255	255
+Knight	170	255	255	255
+Carter	53	255	255	255
+Thorpe	327	255	255	255
+Mihm	215	255	255	255
+Henderson	143	255	255	255
+Richmond	285	255	255	255
+Geiger	121	255	255	255
+Garrity	119	255	255	255
+Rice	283	255	255	255
+Wright	354	255	255	255
+Stevenson	310	255	255	255
+Swift	320	255	255	255
+Carr	52	255	255	255
+Person	263	255	255	255
+Garrett	118	255	255	255
+Abdur-Rahim	2	0	127	0
+Hardaway	135	255	255	255
+Brandon	39	255	255	255
+Curry	74	255	255	255
+Majerle	189	255	255	255
+Hill	145	255	255	255
+Mason	198	255	255	255
+Recasner	279	255	255	255
+Laettner	173	255	255	255
+Harvey	141	255	255	255
+Wingate	352	255	255	255
+Gugliotta	130	255	255	255
+Tarlac	323	255	255	255
+Cardinal	51	255	255	255
+Long	179	255	255	255
+Mourning	226	255	255	255
+Boykins	36	191	191	64
+Rooks	290	255	255	255
+McLeod	211	255	255	255
+Iverson	155	255	255	255
+Bell	21	254	127	254
+Hoiberg	146	255	255	255
+Norris	238	255	255	255
+Daniels	76	255	255	255
+Green	128	255	255	255
+Massenburg	199	255	255	255
+George	122	255	255	255
+Mashburn	197	255	255	255
+Brand	38	255	255	255
+Stockton	313	255	255	255
+Peterson	264	255	255	255
+Anderson	7	0	254	254
+Nesby	234	255	255	255
+Kersey	166	255	255	255
+Peeler	258	255	255	255
+Przybilla	277	255	255	255
+Buechler	44	255	255	255
+Coles	65	255	255	255
+Perkins	261	255	255	255
+Weatherspoon	342	255	255	255
+Childs	59	255	255	255
+Croshere	70	255	255	255
+Jones	161	255	255	255
+Davis	78	255	255	255
+West	346	255	255	255
+Johnson	160	255	255	255
+Murray	228	255	255	255
+Payton	257	255	255	255
+Barkley	17	254	0	127
+Bogues	30	32	32	159
+David	77	255	255	255
+Rider	286	255	255	255
+Nesterovic	235	255	255	255
+James	158	255	255	255
+Pollard	268	255	255	255
+Profit	276	255	255	255
+Moore	224	255	255	255
+Bullard	46	255	255	255
+Postell	273	255	255	255
+Santiago	297	255	255	255
+Gatling	120	255	255	255
+Webber	343	255	255	255
+Feick	103	255	255	255
+Newman	237	255	255	255
+Potapenko	274	255	255	255
+Brown	40	255	255	255
+Mills	218	255	255	255
+Fisher	106	255	255	255
+MacCulloch	184	255	255	255
+Strickland	316	255	255	255
+Benjamin	23	254	254	127
+Maxwell	200	255	255	255
+Ostertag	246	255	255	255
+DeClercq	80	255	255	255
+Ward	341	255	255	255
+Mitchell	219	255	255	255
+Baker	16	254	0	0
+Cummings	72	255	255	255
+Barros	18	254	0	254
+Vaught	336	255	255	255
+Vaughn	335	255	255	255
+Maggette	187	255	255	255
+Parks	255	255	255	255
+Palacio	253	255	255	255
+Fuller	113	255	255	255
+Roberson	287	255	255	255
+Dudley	90	255	255	255
+Ruffin	292	255	255	255
+Marion	194	255	255	255
+Amaechi	6	0	254	127
+Panko	254	255	255	255
+Starks	308	255	255	255
+Christie	60	255	255	255
+Atkins	11	127	127	0
+MacLean	185	255	255	255
+Bender	22	254	254	0
+Alston	5	0	254	0
+Blount	29	223	223	96
+Kerr	165	255	255	255
+Ferry	104	255	255	255
+Cleaves	62	255	255	255
+Ekezie	95	255	255	255
+Stoudamire	315	255	255	255
+Odom	242	255	255	255
+Duncan	91	255	255	255
+Houston	149	255	255	255
+LaFrentz	172	255	255	255
+Fox	110	255	255	255
+Mohammed	221	255	255	255
+Battie	20	254	127	127
+Reeves	281	255	255	255
+Terry	325	255	255	255
+Del Negro	81	255	255	255
+Overton	248	255	255	255
+Benoit	24	96	96	223
+Eisley	94	255	255	255
+Voskuhl	337	255	255	255
+Robinson	288	255	255	255
+Wesley	345	255	255	255
+Hamilton	133	255	255	255
+Magloire	188	255	255	255
+Ellis	99	255	255	255
+Foyle	111	255	255	255
+El-Amin	96	255	255	255
+Mobley	220	255	255	255
+Day	79	255	255	255
+Wang	340	255	255	255
+Ham	132	255	255	255
+Campbell	50	255	255	255
+Coker	63	255	255	255
+Manning	192	255	255	255
+Garnett	117	255	255	255
+Miller	217	255	255	255
+Finley	105	255	255	255
+Snow	304	255	255	255
+N'diaye	230	255	255	255
+Drew	89	255	255	255
+Sanchez	296	255	255	255
+Lenard	176	255	255	255
+Kukoc	171	255	255	255
+Mullin	227	255	255	255
+Collier	66	255	255	255
+Bohannon	31	32	159	32
+Alexander	3	0	127	127
+Edwards	93	255	255	255
+Dickerson	84	255	255	255
+Polynice	269	255	255	255
+Goodrich	126	255	255	255
+Delk	82	255	255	255
+Livingston	178	255	255	255
+Corbin	68	255	255	255
+Patterson	256	255	255	255
+Bowen	34	159	32	159
+Fortson	108	255	255	255
+Pierce	266	255	255	255
+Fizer	107	255	255	255
+Tabak	322	255	255	255
+Turkoglu	331	255	255	255
+Jacobson	157	255	255	255
+King	169	255	255	255
+Dooling	87	255	255	255
+Tsakalidis	330	255	255	255
+Coleman	64	255	255	255
+Posey	272	255	255	255
+McCarty	201	255	255	255
+Sabonis	294	255	255	255
+Shaw	300	255	255	255
+Porter	271	255	255	255
+Kemp	164	255	255	255
+Miles	216	255	255	255
+Hughes	152	255	255	255
+Lopez	181	255	255	255
+Oakley	241	255	255	255
+McCoy	204	255	255	255
+Francis	112	255	255	255
+Mottola	225	255	255	255
+Hammonds	134	255	255	255
+Bryant	42	255	255	255
+Augmon	12	127	127	254
+Griffin	129	255	255	255
+Sura	319	255	255	255
+Newble	236	255	255	255
+Abdul-Wahad	1	0	0	254
+Eschmeyer	101	255	255	255
+McDyess	205	255	255	255
+Slater	302	255	255	255
+Ratliff	278	255	255	255
+Langhi	175	255	255	255
+Nowitzki	239	255	255	255
+Dampier	75	255	255	255
+Hunter	153	255	255	255
+Szczerbiak	321	255	255	255
+Skinner	301	255	255	255
+Price	275	255	255	255
+Lue	182	255	255	255
+McInnis	208	255	255	255
+Blaylock	28	223	96	223
+Perdue	260	255	255	255
+Perry	262	255	255	255
+Langdon	174	255	255	255
+Pippen	267	255	255	255
+Harper	136	255	255	255
+Buford	45	255	255	255
+Taylor	324	255	255	255
+Van Exel	332	255	255	255
+Caffey	48	255	255	255
+Avery	14	127	254	127
+Strong	317	255	255	255
+Curley	73	255	255	255
+Schrempf	298	255	255	255
+Moiso	222	255	255	255
+Sundov	318	255	255	255
+Olajuwon	243	255	255	255
+Artest	10	127	0	254
+Pope	270	255	255	255
+McPherson	212	255	255	255
+Ilgauskas	154	255	255	255
+1
+2
+Eastern Conference	0	0	0	127
+Western Conference	1	0	0	254
+2
+4
+Midwest Division	2	0	127	0
+Central Division	1	0	0	254
+Atlantic Division	0	0	0	127
+Pacific Division	3	0	127	127
+3
+29
+Washington Wizards	28	223	96	223
+Phoenix Suns	20	254	127	127
+Detroit Pistons	7	0	254	254
+Vancouver Grizzlies	27	223	96	96
+Houston Rockets	9	127	0	127
+Miami Heat	13	127	254	0
+Los Angeles Clippers	11	127	127	0
+Orlando Magic	18	254	0	254
+Portland Trail Blazers	21	254	127	254
+New Jersey Nets	16	254	0	0
+Toronto Raptors	25	96	223	96
+Philadelphia 76ers	19	254	127	0
+Golden State Warriors	8	127	0	0
+Indiana Pacers	10	127	0	254
+Utah Jazz	26	96	223	223
+Seatle SuperSonices	24	96	96	223
+Cleveland Cavaliers	4	0	127	254
+Charlotte Hornets	2	0	127	0
+Chicago Bulls	3	0	127	127
+Los Angeles Lakers	12	127	127	254
+Atlanta Hawks	0	0	0	127
+Milwaukee Bucks	14	127	254	127
+Denver Nuggets	6	0	254	127
+Boston Celtics	1	0	0	254
+Minnesota Timberwolves	15	127	254	254
+San Antonio Spurs	23	254	254	127
+New York Knicks	17	254	0	127
+Dallas Mavericks	5	0	254	0
+Sacramento Kings	22	254	254	0
+LOG_COLOR	false
+SQUARE_ROOT_COLOR_STRING	false
+COLOR_BINNING_PROPERTIES
+0	1.00	83.00	1	0	0	0	0	255	0
+0	0.00	82.00	1	0	0	0	0	255	0
+0	1.00	3443.00	1	0	0	0	0	255	0
+0	1.00	42.00	1	0	0	0	0	255	0
+0	0.00	2380.00	1	0	0	0	0	255	0
+0	0.00	31.10	1	0	0	0	0	255	0
+0	0.00	307.00	1	0	0	0	0	255	0
+0	0.00	4.80	1	0	0	0	0	255	0
+0	0.00	749.00	1	0	0	0	0	255	0
+0	0.00	11.50	1	0	0	0	0	255	0
+0	0.00	1052.00	1	0	0	0	0	255	0
+0	0.00	16.30	1	0	0	0	0	255	0
+0	0.00	753.00	1	0	0	0	0	255	0
+0	0.00	9.80	1	0	0	0	0	255	0
+0	0.00	183.00	1	0	0	0	0	255	0
+0	0.00	2.51	1	0	0	0	0	255	0
+0	0.00	228.00	1	0	0	0	0	255	0
+0	0.00	3.74	1	0	0	0	0	255	0
+0	0.00	326.00	1	0	0	0	0	255	0
+0	0.00	4.10	1	0	0	0	0	255	0
+0	0.00	7.00	1	0	0	0	0	255	0
+0	0.00	319.00	1	0	0	0	0	255	0
+0	0.00	4.10	1	0	0	0	0	255	0
+3	0.00	40.00	3	4.00	24.00	40.00	0	0	0	204	204	0	204	204	0	255	0	0	255	0	0	153	0	153
+0	0.00	0.50	1	0	0	0	0	255	0
+0	0.00	813.00	1	0	0	0	0	255	0
+0	0.00	1927.00	1	0	0	0	0	255	0
+0	0.00	11.20	1	0	0	0	0	255	0
+0	0.00	25.50	1	0	0	0	0	255	0
+0	0.00	1.00	1	0	0	0	0	255	0
+0	0.00	221.00	1	0	0	0	0	255	0
+0	0.00	603.00	1	0	0	0	0	255	0
+0	0.00	2.70	1	0	0	0	0	255	0
+0	0.00	7.40	1	0	0	0	0	255	0
+0	0.00	1.00	1	0	0	0	0	255	0
+0	0.00	666.00	1	0	0	0	0	255	0
+0	0.00	972.00	1	0	0	0	0	255	0
+0	0.00	8.30	1	0	0	0	0	255	0
+0	0.00	13.10	1	0	0	0	0	255	0
+0	0.00	1.00	1	0	0	0	0	255	0
+0	0.00	813.00	1	0	0	0	0	255	0
+0	0.00	1607.00	1	0	0	0	0	255	0
+0	0.00	813.00	1	0	0	0	0	255	0
+0	0.00	1607.00	1	0	0	0	0	255	0
+0	0.00	1.00	1	0	0	0	0	255	0
+0	0.00	2.00	1	0	0	0	0	255	0
+0	0.00	1.00	1	0	0	0	0	255	0
+HIERARCHY_HISTORY
+1
+Hierarchy: 1	2
+2	3	
+0
+-1	-1
+BINNING_PROPERTIES
+0	1.00	83.00	1
+0	0.00	82.00	1
+0	1.00	3443.00	1
+0	1.00	42.00	1
+0	0.00	2380.00	1
+0	0.00	31.10	1
+0	0.00	307.00	1
+0	0.00	4.80	1
+0	0.00	749.00	1
+0	0.00	11.50	1
+0	0.00	1052.00	1
+0	0.00	16.30	1
+0	0.00	753.00	1
+0	0.00	9.80	1
+0	0.00	183.00	1
+0	0.00	2.51	1
+0	0.00	228.00	1
+0	0.00	3.74	1
+0	0.00	326.00	1
+0	0.00	4.10	1
+0	0.00	7.00	1
+0	0.00	319.00	1
+0	0.00	4.10	1
+0	0.00	40.00	1
+0	0.00	0.50	1
+0	0.00	813.00	1
+0	0.00	1927.00	1
+0	0.00	11.20	1
+0	0.00	25.50	1
+0	0.00	1.00	1
+0	0.00	221.00	1
+0	0.00	603.00	1
+0	0.00	2.70	1
+0	0.00	7.40	1
+0	0.00	1.00	1
+0	0.00	666.00	1
+0	0.00	972.00	1
+0	0.00	8.30	1
+0	0.00	13.10	1
+0	0.00	1.00	1
+0	0.00	813.00	1
+0	0.00	1607.00	1
+0	0.00	813.00	1
+0	0.00	1607.00	1
+0	0.00	1.00	1
+0	0.00	2.00	1
+0	0.00	1.00	1
+USER_MAXIMUM_DEPTH	3
+HIDE_LEAF_LABEL	false
+NUMERICAL_ATTRIBUTE_USER_MINIMA	47
+false	0
+false	-1
+false	0
+false	0
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+false	-1
+NUMERICAL_ATTRIBUTE_USER_MAXIMA	47
+false	84
+false	83
+false	3444
+false	43
+false	2381
+false	32
+false	308
+false	5
+false	750
+false	12
+false	1053
+false	17
+false	754
+false	10
+false	184
+false	3
+false	229
+false	4
+false	327
+false	5
+false	8
+false	320
+false	5
+false	41
+false	1
+false	814
+false	1928
+false	12
+false	26
+false	2
+false	222
+false	604
+false	3
+false	8
+false	2
+false	667
+false	973
+false	9
+false	14
+false	2
+false	814
+false	1608
+false	814
+false	1608
+false	2
+false	3
+false	2
+AGGREGATE_FUNCTION	47
+4	1
+5	1
+6	1
+7	1
+8	1
+9	1
+10	1
+11	1
+12	1
+13	1
+14	1
+15	1
+16	1
+17	1
+18	1
+19	1
+20	1
+21	1
+22	1
+23	1
+24	1
+25	1
+26	1
+27	1
+28	1
+29	1
+30	1
+31	1
+32	1
+33	1
+34	1
+35	1
+36	1
+37	1
+38	1
+39	1
+40	1
+41	1
+42	1
+43	1
+44	1
+45	1
+46	1
+47	1
+48	1
+49	1
+50	1
+HIGHLIGHTED_NODE	0
+TREEMAP_TITLE	nba-no-hierarchy.tm3
+NO_BORDER	false
+USER_ROOT	-1
+END_SETTINGS

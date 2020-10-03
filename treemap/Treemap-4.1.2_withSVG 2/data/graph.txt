@@ -1,0 +1,10 @@
+NODE	node type
+STRING	STRING	
+1	type1		A	B	1
+2	type2		A	B	2
+3	type3		A	C	D	3
+3.3	type33		A	C	D	3.3
+4	type4		A	C	D	4
+4.4	type44		A	C	D	4.4
+5	type5		A	C	5
+7	type7		A	C	F	7

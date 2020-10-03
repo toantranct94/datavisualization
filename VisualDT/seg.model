@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<DecisionTree>
+<DataSet Attributes="19" Classes="7">
+<Attributes>
+<Attribute>
+<Name>A1</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A2</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A3</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A4</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A5</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A6</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A7</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A8</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A9</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A10</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A11</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A12</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A13</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A14</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A15</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A16</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A17</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A18</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>A19</Name>
+<Type>REAL</Type>
+</Attribute>
+</Attributes>
+<Classes>
+<Class>1</Class>
+<Class>2</Class>
+<Class>3</Class>
+<Class>4</Class>
+<Class>5</Class>
+<Class>6</Class>
+<Class>7</Class>
+</Classes>
+</DataSet>
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="6.34*A1 - 16896.75*A19 + 10000 = 0" InputData="A1;A19;6.341500905765941E-4;-1.6896750293893086;1.0">
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Pos part =&gt; - 7.36*A1 - 90.09*A12 + 10000 = 0" InputData="A1;A12;-7.364316673471871E-4;-0.00900908223352095;1.0">
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Pos part =&gt; - 6.05*A2 - 1.05*A17 + 1000 = 0" InputData="A2;A17;-0.006050129645635263;-0.0010528705243310447;1.0">
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Pos part =&gt; - 2.58*A16 - 374.26*A18 + 100 = 0" InputData="A16;A18;-0.025812503810730098;-3.7426438711228727;1.0">
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Pos part =&gt; - 6.7*A1 - 2011.67*A15 + 10000 = 0" InputData="A1;A15;-6.702195661024732E-4;-0.20116687271454783;1.0">
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Pos part =&gt; - 8.69*A1 + 2.4*A16 + 1000 = 0" InputData="A1;A16;-0.0086861925616485;0.0024047507769934637;1.0">
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Pos part =&gt; Class: 3" InputData="3"/>
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: 5" InputData="5"/>
+</DecisionNode>
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: 4" InputData="4"/>
+</DecisionNode>
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Neg part  =&gt; - 3.9*A1 + 5132.93*A19 + 10000 = 0" InputData="A1;A19;-3.8981318740408615E-4;0.5132930312961084;1.0">
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Pos part =&gt; Class: 1" InputData="1"/>
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Neg part  =&gt; 2.76*A14 - 97.7*A18 + 100 = 0" InputData="A14;A18;0.027621174008799987;-0.977043738657419;1.0">
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Pos part =&gt; - 1.51*A18 + 3.99*A19 + 10 = 0" InputData="A18;A19;-0.15091852682723672;0.398862886585694;1.0">
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Pos part =&gt; 5.89*A1 - 71.3*A2 + 10000 = 0" InputData="A1;A2;5.891072161142098E-4;-0.00713016451229281;1.0">
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Pos part =&gt; Class: 5" InputData="5"/>
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: 4" InputData="4"/>
+</DecisionNode>
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: 3" InputData="3"/>
+</DecisionNode>
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Neg part  =&gt; 7.49*A1 - 4050.5*A18 + 1000 = 0" InputData="A1;A18;0.007486897928624904;-4.05049734393383;1.0">
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Pos part =&gt; Class: 5" InputData="5"/>
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: 3" InputData="3"/>
+</DecisionNode>
+</DecisionNode>
+</DecisionNode>
+</DecisionNode>
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: 6" InputData="6"/>
+</DecisionNode>
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: 2" InputData="2"/>
+</DecisionNode>
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: 7" InputData="7"/>
+</DecisionNode>
+</DecisionTree>

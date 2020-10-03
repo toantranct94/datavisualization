@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<DecisionTree>
+<DataSet Attributes="16" Classes="3">
+<Attributes>
+<Attribute>
+<Name>stt</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>toan</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>ly</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>hoa</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>sinh</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>tin</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>van</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>su</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>dia</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>nn</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>gdcd</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>cn</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>theduc</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>qpan</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>tbcmcn</Name>
+<Type>REAL</Type>
+</Attribute>
+<Attribute>
+<Name>songaynghi</Name>
+<Type>REAL</Type>
+</Attribute>
+</Attributes>
+<Classes>
+<Class>TB</Class>
+<Class>K</Class>
+<Class>G</Class>
+</Classes>
+</DataSet>
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="- 2.46*sinh - 9.55*tbcmcn + 100 = 0" InputData="sinh;tbcmcn;-0.02462908347965574;-0.0954689599423938;1.0">
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Pos part =&gt; - 1943047.41*toan + 4.52*gdcd + 10000000 = 0" InputData="toan;gdcd;-0.19430474058728195;4.5238240604270975E-7;1.0">
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Pos part =&gt; Class: TB" InputData="TB"/>
+<DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Neg part  =&gt; 1.99*nn - 14.25*tbcmcn + 100 = 0" InputData="nn;tbcmcn;0.019864821172489364;-0.1424926857579789;1.0">
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Pos part =&gt; Class: K" InputData="K"/>
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: G" InputData="G"/>
+</DecisionNode>
+</DecisionNode>
+<DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: G" InputData="G"/>
+</DecisionNode>
+</DecisionTree>

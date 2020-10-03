@@ -1,0 +1,217 @@
+false
+43causesofdeath-65plus.tm3
+TREEMAP VERSION	Treemap 4.0
+FLIP_SLICE_AND_DICE	false
+PARTITIONING_METHOD	1
+NOMINAL_ATTRIBUTE	2
+3	43
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+3	35
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+LABEL_ATTRIBUTE_INDEX	-2
+SIZE_ATTRIBUTE_NUMERIC_INDEX	1
+COLOR_ATTRIBUTE_INDEX	4
+AUTOHIDE	false
+VISIBLE_POPUP	true
+DIRECTORY_MAPPING_DATA	false
+FONT_SIZE	12
+BORDER_SIZE	3
+ALL_NOMINAL_STRINGS_TO_COLORS	2
+0
+43
+Accidents & adverse effects	9	127	0	127
+Pneumonia	38	255	255	255
+Other non renal failure	36	191	191	64
+Alzheimer's disease	11	127	127	0
+Other causes of deaths	32	32	159	159
+- of genital organs	5	0	254	0
+Acute myocardial infarction	10	127	0	254
+- of digestive organs	4	0	127	254
+Benign neoplasms	14	127	254	127
+- of urinary organs	8	127	0	0
+Nutritional deficiencies	26	96	223	223
+Ulcer of stomach/duodenum	42	255	255	255
+Atherosclerosis	13	127	254	0
+Other malignant neoplasms	35	159	159	32
+Other Ischemic heart disease	31	32	159	32
+Cerebral thromb./unspec. occl. of arteries	15	127	254	254
+Chronic liver dis. & cirrhosis	17	254	0	127
+Diabetes mellitus	18	254	0	254
+Other/late effects of cerebrovascular dis.	37	255	255	255
+- of breast	3	0	127	127
+Intra cerebr./cranial hemorrhage	24	96	96	223
+Other diseases of the heart	34	159	32	159
+Other cerebrovascular disease	33	159	32	32
+Hernia/intestinal obstruction	20	254	127	127
+Other COPD & allied conditions	29	223	223	96
+Other Infectious and parasitic diseases	30	32	32	159
+"  Oth. dis. of arteries, arterioles, capillaries"	2	0	127	0
+Emphysema	19	254	127	0
+Cholelithiasis/gallbladder disorder	16	254	0	0
+"  - of lip, oral, pharynx"	0	0	0	127
+"  Bronchitis, chronic and unspec."	1	0	0	254
+Hypertensive heart & renal dis.	22	254	254	0
+- of respiratory organs	7	0	254	254
+Hypertensive heart disease	23	254	254	127
+Hypertension	21	254	127	254
+- of lymph./hemotopoietic tissues	6	0	254	127
+Leukemia	25	96	223	96
+Rheumatic	40	255	255	255
+Septicemia	41	255	255	255
+Renal failure/imp. ren. funct.	39	255	255	255
+Anemia	12	127	127	254
+Old myocardial infarction	27	223	96	96
+Other (non-pneumonia)	28	223	96	223
+5
+35
+402	21	254	127	254
+"401, 403"	0	0	0	127
+492	29	223	223	96
+431-432	24	96	96	223
+38	19	254	127	0
+179-187	10	127	0	254
+390-398	20	254	127	127
+574-575	32	32	159	159
+260-269	16	254	0	0
+280-285	17	254	0	127
+490-491	28	223	96	223
+800-949	33	159	32	32
+"584-586, 588-589"	5	0	254	0
+140-149	6	0	254	127
+410	23	254	254	127
+160-165	8	127	0	0
+"550-553, 560"	4	0	127	254
+440	25	96	223	96
+441-448	26	96	223	223
+200-208	12	127	127	254
+diff	34	159	32	159
+331	18	254	0	254
+"434.0, 434.9"	3	0	127	127
+531-533	30	32	32	159
+210-239	14	127	254	127
+188-189	11	127	127	0
+250	15	127	254	254
+480-486	27	223	96	96
+174-175	9	127	0	127
+"430, 433, 435-438"	2	0	127	0
+"412, 414"	1	0	0	254
+150-159	7	0	254	254
+204-208	13	127	254	0
+571	31	32	159	32
+404	22	254	254	0
+LOG_COLOR	false
+SQUARE_ROOT_COLOR_STRING	false
+COLOR_BINNING_PROPERTIES
+0	2.50	834.60	1	0	0	0	0	255	0
+0	1.50	646.20	1	0	0	0	0	255	0
+0	-342.10	208.30	1	255	0	0	0	0	0
+3	-73.445	1085.455	3	0.00	102.536	1085.455	0	255	0	0	0	0	0	0	0	255	0	0	255	0	0	204	0	204
+HIERARCHY_HISTORY
+1
+Hierarchy: 1	1
+-1	
+0
+-1	-1
+BINNING_PROPERTIES
+0	2.50	834.60	1
+0	1.50	646.20	1
+0	-342.10	208.30	1
+0	-73.445	1085.455	1
+USER_MAXIMUM_DEPTH	5
+HIDE_LEAF_LABEL	false
+NUMERICAL_ATTRIBUTE_USER_MINIMA	4
+false	1
+false	0
+false	-343
+false	-74
+NUMERICAL_ATTRIBUTE_USER_MAXIMA	4
+false	835
+false	647
+false	209
+false	1086
+AGGREGATE_FUNCTION	4
+1	1
+2	1
+3	1
+4	1
+HIGHLIGHTED_NODE	0
+TREEMAP_TITLE	43causesofdeath-65plus.tm3
+NO_BORDER	false
+USER_ROOT	-1
+END_SETTINGS

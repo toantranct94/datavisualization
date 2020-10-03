@@ -1,0 +1,128 @@
+false
+census.tm3
+TREEMAP VERSION	Treemap 4.0
+FLIP_SLICE_AND_DICE	true
+PARTITIONING_METHOD	0
+NOMINAL_ATTRIBUTE	2
+3	23
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+true
+3	9
+true
+true
+true
+true
+true
+true
+true
+true
+true
+LABEL_ATTRIBUTE_INDEX	-2
+SIZE_ATTRIBUTE_NUMERIC_INDEX	3
+COLOR_ATTRIBUTE_INDEX	2
+AUTOHIDE	false
+VISIBLE_POPUP	true
+DIRECTORY_MAPPING_DATA	false
+FONT_SIZE	12
+BORDER_SIZE	3
+ALL_NOMINAL_STRINGS_TO_COLORS	2
+1
+23
+Kent	13	127	254	0
+Baltimore	2	0	127	0
+Washington	20	254	127	127
+Caroline	4	0	127	254
+Howard	12	127	127	254
+Wicomico	21	254	127	254
+Somerset	17	254	0	127
+Dorchester	8	127	0	0
+Worcester	22	254	254	0
+Cecil	6	0	254	127
+Frederick	9	127	0	127
+Talbot	19	254	127	0
+Carroll	5	0	254	0
+St. Marys	18	254	0	254
+Montgomery	14	127	254	127
+Harford	11	127	127	0
+Anne Arundel	1	0	0	254
+Prince George	15	127	254	254
+Queen Anne's	16	254	0	0
+Charles	7	0	254	254
+Calvert	3	0	127	127
+Allegany	0	0	0	127
+Garrett	10	127	0	254
+2
+9
+Retail Trade	5	0	254	0
+Manufacturing	3	0	127	127
+"Finance, Insurance, and Real Estate"	1	0	0	254
+Services	6	0	254	127
+"Agricultural Services, Forestry, and Fishing"	0	0	0	127
+Transportation and Public Utilities	7	0	254	254
+Wholesale Trade	8	127	0	0
+Construction	2	0	127	0
+Mining	4	0	127	254
+COLOR_BINNING_PROPERTIES
+0	1.00	824.00	1	0	0	0	0	255	0
+0	1993.00	1996.00	1	0	0	0	0	255	0
+0	0.00	168433.00	1	0	0	0	0	255	0
+0	0.00	5669118.00	1	0	0	0	0	255	0
+0	0.00	11435.00	1	0	0	0	0	255	0
+HIERARCHY_HISTORY
+1
+Hierarchy: 1	1
+-1	
+0
+-1	-1
+BINNING_PROPERTIES
+0	1.00	824.00	1
+0	1993.00	1996.00	1
+0	0.00	168433.00	1
+0	0.00	5669118.00	1
+0	0.00	11435.00	1
+USER_MAXIMUM_DEPTH	4
+HIDE_LEAF_LABEL	false
+NUMERICAL_ATTRIBUTE_USER_MINIMA	5
+false	0
+false	1992
+false	-1
+false	-1
+false	-1
+NUMERICAL_ATTRIBUTE_USER_MAXIMA	5
+false	825
+false	1997
+false	168434
+false	5669119
+false	11436
+AGGREGATE_FUNCTION	5
+0	1
+3	1
+4	1
+5	1
+6	1
+HIGHLIGHTED_NODE	0
+TREEMAP_TITLE	census.tm3
+NO_BORDER	false
+USER_ROOT	-1
+END_SETTINGS
