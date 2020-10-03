@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<DecisionTree>
+    <DataSet Attributes="19" Classes="7">
+        <Attributes>
+            <Attribute>
+                <Name>A1</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A2</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A3</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A4</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A5</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A6</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A7</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A8</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A9</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A10</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A11</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A12</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A13</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A14</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A15</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A16</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A17</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A18</Name>
+                <Type>REAL</Type>
+            </Attribute>
+            <Attribute>
+                <Name>A19</Name>
+                <Type>REAL</Type>
+            </Attribute>
+        </Attributes>
+        <Classes>
+            <Class>1</Class>
+            <Class>2</Class>
+            <Class>3</Class>
+            <Class>4</Class>
+            <Class>5</Class>
+            <Class>6</Class>
+            <Class>7</Class>
+        </Classes>
+    </DataSet>
+    <DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="- 5.9*A12 - 4.73*A13 + 1000 = 0" InputData="A12;A13;-0.0059001900912996445;-0.0047312252203955485;1.0">
+        <DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Pos part =&gt; 1.67*A15 - 5.17*A16 + 10 = 0" InputData="A15;A16;0.16671913199345623;-0.517459262486894;1.0">
+            <DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Pos part =&gt; - 2.37*A14 + 1.74*A16 + 10 = 0" InputData="A14;A16;-0.23718556086382805;0.17442315006694362;1.0">
+                <DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Pos part =&gt; - 5.88*A2 - 1.18*A17 + 1000 = 0" InputData="A2;A17;-0.005875527231871512;-0.0011814475409055879;1.0">
+                    <DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Pos part =&gt; - 1.96*A14 - 1.14*A15 + 1 = 0" InputData="A14;A15;-1.9601913093833854;-1.138120630883698;1.0">
+                        <DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Pos part =&gt; Class: 3" InputData="3"/>
+                        <DecisionNode Classifier="visualdt.visualization.methods.scatterplots2d.LineClassifier" Description="Neg part  =&gt; - 4.1*A16 - 423.2*A18 + 100 = 0" InputData="A16;A18;-0.040979199091059036;-4.232008850404444;1.0">
+                            <DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Pos part =&gt; Class: 4" InputData="4"/>
+                            <DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: 5" InputData="5"/>
+                        </DecisionNode>
+                    </DecisionNode>
+                    <DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: 6" InputData="6"/>
+                </DecisionNode>
+                <DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: 1" InputData="1"/>
+            </DecisionNode>
+            <DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: 7" InputData="7"/>
+        </DecisionNode>
+        <DecisionNode Classifier="visualdt.visualization.decisiontree.FinalClassifier" Description="Neg part  =&gt; Class: 2" InputData="2"/>
+    </DecisionNode>
+</DecisionTree>

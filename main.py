@@ -314,7 +314,10 @@ def satimage_dataset(training_set=True,histogram=False, boxplot=False, pie=False
     sat_classes = np.array(sat_classes)
     class_name = sorted(list(set(sat_classes)), reverse=False)
 
-    central_pixel = df[central_features]
+    central_pixel = df[central_features + ['class']]
+
+    central_pixel.to_csv(os.path.join(os.getcwd(), 'VisualDT', 'satimage.data'), sep=',', index=False)
+
 
     colors = ['#FBBC04', '#EA4335', '#4285F4', '#34A853', '#FD8EBB', '#A610D8']
 
@@ -416,8 +419,8 @@ def satimage_dataset(training_set=True,histogram=False, boxplot=False, pie=False
 
 
 if __name__ == "__main__":
-    iris_dataset(histogram=False, boxplot=False, pie=True, scatter2d=False, matrix=True, parallel=False)
-    segment_dataset(histogram=False, boxplot=False, pie=True, scatter2d=False, matrix=False, parallel=False)
-    satimage_dataset(training_set=True, histogram=False, boxplot=False, pie=True, scatter2d=False, matrix=False, parallel=False)
-    satimage_dataset(training_set=False, histogram=False, boxplot=False, pie=True, scatter2d=False, matrix=False, parallel=False)
+    # iris_dataset(histogram=False, boxplot=False, pie=True, scatter2d=False, matrix=True, parallel=False)
+    # segment_dataset(histogram=False, boxplot=False, pie=True, scatter2d=False, matrix=False, parallel=False)
+    satimage_dataset(training_set=True, histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=False)
+    # satimage_dataset(training_set=False, histogram=False, boxplot=False, pie=False, scatter2d=False, matrix=False, parallel=False)
 
