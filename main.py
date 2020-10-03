@@ -416,8 +416,8 @@ def satimage_dataset(training_set=True,histogram=False, boxplot=False, pie=False
 
 
 if __name__ == "__main__":
-    # iris_dataset(histogram=False, boxplot=False, pie=False, scatter2d=True, matrix=True, parallel=True)
+    iris_dataset(histogram=False, boxplot=False, pie=True, scatter2d=False, matrix=True, parallel=False)
     segment_dataset(histogram=False, boxplot=False, pie=True, scatter2d=False, matrix=False, parallel=False)
-    # satimage_dataset(training_set=True, histogram=True, boxplot=True, pie=True, scatter2d=True, matrix=True, parallel=True)
-    # satimage_dataset(training_set=False,histogram=True, boxplot=True, pie=True, scatter2d=True, matrix=True, parallel=True)
+    satimage_dataset(training_set=True, histogram=False, boxplot=False, pie=True, scatter2d=False, matrix=False, parallel=False)
+    satimage_dataset(training_set=False, histogram=False, boxplot=False, pie=True, scatter2d=False, matrix=False, parallel=False)
 
