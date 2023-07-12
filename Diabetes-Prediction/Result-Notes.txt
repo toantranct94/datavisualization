@@ -1,0 +1,35 @@
+developed end-to-end full fleged ML model & deployd on heroku
+
+random forest classifier/ confusion matrix(y-test,y-pred) => 91,16,21,26
+
+Classification Report(avg/total) => presicion = 75, recall = 76, f1score = 76, support = 154,
+
+ROC accuracy score => 0.8111950686021077
+
+HPT Cross validation => mean = 0.7167451503781488 , SD = 0.05709939039060164
+HPT GridSewarchCV => best accuracy/best score = 0.755700325732899, best parametres = 
+
+random forest classifier(avg/total)  => presicion = 83, recall = 83, f1score = 83, support = 154,
+random forest classifier/confusion matrix(y-test,y-pred) => 94,13,13,34
+
+Pickle/confusion matrix(y-test,y-pred) => 94,13,13,34
+
+SVM:
+Train score : 1.0
+Test score : 0.6948051948051948
+
+KNN:
+Train score : 0.8013029315960912
+Test score : 0.7662337662337663
+
+Naive:
+Train score : 0.745928338762215
+Test score : 0.7857142857142857
+
+Decision Tree:
+Train score : 1.0
+Test score : 0.6883116883116883
+
+Random Forest:
+Train score : 0.988599348534202
+Test score : 0.7792207792207793

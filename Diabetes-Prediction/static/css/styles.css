@@ -1,0 +1,35 @@
+body {
+    text-align: center;
+    background-color: ghostwhite;
+}
+
+header {
+    font-family: 'Arial', serif;
+    padding-top: 40;
+    padding-bottom: 40;
+    background-color: darkgray;
+    color: dimgray;
+}
+
+.btn {
+    background-color: grey;
+}
+
+
+input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 500px) {
+    input {
+        width: 100%;
+    }
+}

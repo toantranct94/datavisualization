@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="static/css/styles.css">
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .input-box {
+            width: 50%;
+        }
+
+        .output-image {
+            width: 50%;
+            text-align: center;
+        }
+    </style>
+
+    <title>Diabetes Prediction</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Diabetes Prediction</h1>
+    </header>
+
+    <br>
+
+    <div class="container">
+        <div class="input-box">
+            <form action="/predict" method="POST">
+                <select name="model">
+                    <option value="svm">SVM</option>
+                    <option value="knn">KNN</option>
+                    <option value="decision_tree">Decision Tree</option>
+                    <option value="random_forest">Random Forest</option>
+                </select>
+                <br>
+                <span class="details">Number of times pregnant
+                    <input type="text" name="pregnancies" placeholder="Number of times pregnant" required="required">
+                </span>
+                <br>
+                <input type="text" name="glucose" placeholder="Glucose" required="required">
+                <br>
+                <input type="text" name="bloodPressure" placeholder="Blood Pressure (mm Hg)" required="required">
+                <br>
+                <input type="text" name="SkinThickness" placeholder="Skin Thickness (mm)" required="required">
+                <br>
+                <input type="text" name="Insulin" placeholder="Insulin (mu U/ml)" required="required">
+                <br>
+                <input type="text" name="BMI" placeholder="BMI" required="required">
+                <br>
+                <input type="text" name="Diabetes Pedigree Function" placeholder="Diabetes Pedigree Function"
+                    required="required">
+                <br>
+                <input type="text" name="Age" placeholder="Age" required="required">
+                <br>
+                <button type="submit" class="btn btn-outline-warning">Predict</button>
+            </form>
+        </div>
+        <div class="output-image" {% if not prediction_text %}hidden{% endif %}>
+            <h3><strong>{{ prediction_text }}</strong></h3>
+            <img src="static/image/output.png" alt="Output Image">
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
